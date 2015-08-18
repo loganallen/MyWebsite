@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    background: #FFFFFF;
+    color: white;
+}
+
+.headerContainer{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+.header {
+    background: rgba(0,0,0,.87);
+    top: 0px;
+    width: 100%;
+    height: 150px;
+    margin: 0px auto;
+}
+#insideHeader{
+	max-width: 1000px;
+	width: 100%;
+	min-width: 775px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+#firstName{
+	margin: 0px;
+	top: 30px;
+	left: 110px;
+	font-size: 35px;
+	color: white;
+	display: inline;
+	position: relative;
+}
+#lastName{
+	margin: 0px;
+	top: 30px;
+	left: 120px;
+	font-size: 33px;
+	color: rgb(160,160,160);
+	display: inline;
+	position: relative;
+}
+#headerImage{
+	top: 30px;
+	left: 175px;
+	position: relative;
+}
+#navigationContainer{
+	right: 7%;
+	top: -20px;
+	float: right;
+	position: relative;
+}
+#navigationContainer li{
+	background: rgb(70,70,70);
+	color:white;
+	margin: 5px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	list-style: none;
+	display: inline-block;
+}
+#navigationContainer li a{
+	text-decoration: none;
+	color: rgb(200,200,200);
+}
+
+/*-------------- CONTENT ----------------*/
+
+.content {
+    width: 100%;
+    min-width: 1000px;
+    background: rgba(100,100,100,1);
+    margin-top: 150px;
+    z-index: 10;
+}
+.limit{
+	background: rgba(100,0,0,.5);
+	width: 1000px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+/* ----------------- FIRST SECTION --------------*/
+
+#firstSection{
+	background-image: url("images/cornellBackground.jpg");
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	height: 600px;
+	position: static;
+}
+#intro{
+	background: rgba(255,255,255,.6);
+	border-radius: 5px;
+	top: 150px;
+	margin: auto;
+	padding: 0px;
+	height: 300px;
+	width: 600px;
+	color: black;
+	position: relative;
+	z-index: 95;
+}
+#intro h1{
+	margin: 50px 0px 0px 10px;
+	padding: 0px;
+	width: 250px;
+	font-size: 40px;
+	position: relative;
+	display: inline-block;
+	z-index: 100;
+	text-align: center;
+}
+#intro img{
+	left: 25px;
+	top: 25px;
+	margin: 0px;
+	padding: 0px;
+	width: 250px;
+	height: 250px;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+#intro div{
+	top: 40px;
+	margin-left: 15px;
+	margin-right: 0px;
+	width: 230px;
+	font-size: 17px;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+}
+
+
+/* ----------------- BODY SECTIONS --------------*/
+
+
+.bodySection{
+	text-align: left;
+	top: 0px;
+	width: 100%;
+	height: 800px;
+	position: static;
+}
+
+#background2{
+	background: rgb(222,222,222);
+}
+#background3{
+	background: rgb(100,100,100);
+}
+#background4{
+	background: rgb(255,255,255);
+}
+
+
+
+/* ------------ FOOTER ------------ */
+
+#footerContainer{
+    background: rgb(0,0,0);
+    position: static;
+    top: 0px;
+    width: 100%;
+}
+#footer {
+    width: 15%;
+  	background: gray;
+  	color: white;
+  	font-size: 12px;
+    margin: 0px auto;
+    padding: 15px;
+}
