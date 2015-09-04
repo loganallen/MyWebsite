@@ -91,7 +91,7 @@ body{
     z-index: 10;
 }
 .limit{
-	background: rgba(100,0,0,.5);
+	background: rgba(100,0,0,.2);
 	width: 1000px;
 	height: 100%;
 	margin: 0px auto;
@@ -180,6 +180,39 @@ body{
 }
 #background4{
 	background: rgb(255,255,255);
+}
+
+#projectsSection{
+	background: rgba(255,255,255,.6);
+	border-radius: 0px;
+	top: 500px;
+	margin: auto;
+	padding: 50px;
+	height: 100px;
+	width: 700px;
+	position: relative;
+	z-index: 95;
+}
+
+#navigationProjects{
+	position: relative;
+	text-align: center;
+}
+#navigationProjects li{
+	color:white;
+	list-style: none;
+	display: inline-block;
+}
+
+#navigationProjects li img{
+	padding: 0px 5px;
+	text-decoration: none;
+	color: rgb(175,175,175);
+}
+#navigationProjects li a:hover{
+	transition: color .5s;
+	text-decoration: none;
+	color: rgb(255,255,255);
 }
 
 
