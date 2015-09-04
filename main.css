@@ -216,6 +216,23 @@ body{
 }
 
 
+/* ------------ CONTACT ------------ */
+
+#emailSection{
+	background: rgba(160,0,0,.6);
+	border-radius: 5px;
+	top: 300px;
+	margin: 0px 0px 0px 250px;
+	padding: 50px;
+	height: 300px;
+	width: 500px;
+	position: relative;
+	z-index: 95;
+}
+.userInput{
+
+}
+
 
 /* ------------ FOOTER ------------ */
 
@@ -226,7 +243,7 @@ body{
     width: 100%;
 }
 #footer {
-    width: 16%;
+    width: 20%;
   	background: gray;
   	color: white;
   	font-size: 12px;
