@@ -73,7 +73,12 @@ body{
 }
 #navigationContainer li a{
 	text-decoration: none;
-	color: rgb(200,200,200);
+	color: rgb(175,175,175);
+}
+#navigationContainer li a:hover{
+	transition: color .5s;
+	text-decoration: none;
+	color: rgb(255,255,255);
 }
 
 /*-------------- CONTENT ----------------*/
@@ -82,7 +87,7 @@ body{
     width: 100%;
     min-width: 1000px;
     background: rgba(100,100,100,1);
-    margin-top: 150px;
+    margin-top: 0px;
     z-index: 10;
 }
 .limit{
@@ -159,6 +164,14 @@ body{
 	position: static;
 }
 
+#topFillerBodySection{
+	text-align: left;
+	top: 0px;
+	width: 100%;
+	height: 150px;
+	position: static;
+}
+
 #background2{
 	background: rgb(222,222,222);
 }
@@ -180,7 +193,7 @@ body{
     width: 100%;
 }
 #footer {
-    width: 15%;
+    width: 16%;
   	background: gray;
   	color: white;
   	font-size: 12px;
