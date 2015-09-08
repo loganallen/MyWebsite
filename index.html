@@ -7,6 +7,7 @@
 	<meta name = "viewport" content="widthe=device-width, initial-scale=1">
 	<title>LoganAllen</title>
 	<link href = "main.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!--<script src="myScript.js" type="text/javascript"></script>-->
 	<!--change title image here-->
 </head>
@@ -22,15 +23,18 @@
 				<div id="firstName">Logan</div>
 				<div id="lastName">ALLEN</div>
 				<div id="headerImage">
-					<a href="http://www.engineering.cornell.edu" target="_blank"><img src="images/headerLogo.png" width=200 height = 50></a>
+					<a href="http://www.engineering.cornell.edu" target="_blank" title="Cornell Engineering Website"><img src="images/headerLogo.png" width=160 height = 40></a>
 				</div>
 
 				<nav id="navigationContainer">
 					<ul>
 						<li><a href="#home">Home</a></li>
+						<li id="navSplitters">|</li>
 						<li><a href="#second">Profile</a></li>
-						<li><a href="#third" title="View projects.">Projects</a></li>
-						<li><a href="#fourth" title="Contact Logan">Contact</a></li>
+						<li id="navSplitters">|</li>
+						<li><a href="#third">Projects</a></li>
+						<li id="navSplitters">|</li>
+						<li><a href="#fourth">Contact</a></li>
 					</ul>
 				</nav>
 
@@ -82,13 +86,13 @@
 					<nav id="navigationProjects">
 						<ul>
 							<li>
-								<a href="http://www.github.com/loganallen" target="_blank"><img src="images/github.png" width=192 height = 80></a>
+								<a href="http://www.github.com/loganallen" target="_blank" title="View Logan's Github"><img src="images/github.png" width=192 height = 80></a>
 							</li>							
 							<li>
 								<a href="http://www.google.com" target="_blank"><img src="images/dropbox.png" width=120 height = 104></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/profile/view?id=AAIAABZej4UBtgjrVBADcNU3bFB1-ZwuPtyS_pQ&trk=nav_responsive_tab_profile_pic" target="_blank"><img src="images/linkedin.png" width=192 height = 80></a>
+								<a href="https://www.linkedin.com/profile/view?id=AAIAABZej4UBtgjrVBADcNU3bFB1-ZwuPtyS_pQ&trk=nav_responsive_tab_profile_pic" target="_blank" title="Connect with Logan on LinkedIn"><img src="images/linkedin.png" width=192 height = 80></a>
 							</li>
 						</ul>
 					</nav>
