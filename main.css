@@ -1,270 +1,112 @@
 @charset "UTF-8";
-/* CSS Document */
-
 
 *{
-	margin: 0px;
-	padding: 0px;
+  font-family: "Optima"; 
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    background: #FFFFFF;
-    color: white;
+/* Navigation bar items */
+.navbar{
+  background-color: rgba(255,255,255,.85);
 }
-
-.headerContainer{
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 100;
+#name{
+  color: rgb(150,0,0);
+  font-size: 30px;
+  margin-left: 40px;
 }
-.header {
-    background: rgba(0,0,0,.87);
-    top: 0px;
-    width: 100%;
-    height: 120px;
-    margin: 0px auto;
+#myNavbar ul li a{
+  color: rgb(60,60,60);
+  font-size: 16px;
+  text-align: right;
 }
-#insideHeader{
-	max-width: 1000px;
-	width: 100%;
-	min-width: 675px;
-	height: 100%;
-	margin: 0px auto;
-	position: relative;
+#myNavbar ul li a:hover{
+  transition: color .4s, background-color .3s;
+  color: rgb(255,255,255);
+  background-color: rgba(100,0,0,.2);
 }
-#firstName{
-	margin: 0px;
-	top: 25px;
-	left: 110px;
-	font-size: 30px;
-	color: white;
-	display: inline;
-	position: relative;
+.navbar-toggle{
+  border-color: rgb(60,60,60) !important;
 }
-#lastName{
-	margin: 0px;
-	top: 25px;
-	left: 115px;
-	font-size: 28px;
-	color: rgb(160,160,160);
-	display: inline;
-	position: relative;
+.navbar-toggle:hover{
+  transition: background-color .5s;
+  background-color: rgba(100,0,0,.3);
 }
-#headerImage{
-	top: 25px;
-	left: 160px;
-	position: relative;
-}
-#navigationContainer{
-	right: 7%;
-	top: -20px;
-	float: right;
-	position: relative;
-}
-#navigationContainer li{
-	/*background: rgb(70,70,70);
-	padding: 5px 10px;*/
-	margin: 7px;
-	border-radius: 3px;
-	font-size: 15px;
-	list-style: none;
-	display: inline-block;
-}
-#navigationContainer li a{
-	text-decoration: none;
-	color: rgb(175,175,175);
-}
-#navigationContainer li a:hover{
-	transition: color .5s;
-	text-decoration: none;
-	color: rgb(255,255,255);
-}
-#navSplitters{
-	color: rgb(255,220,220);
-}
-/*-------------- CONTENT ----------------*/
-
-.content {
-    width: 100%;
-    min-width: 1000px;
-    background: rgba(100,100,100,1);
-    margin-top: 0px;
-    z-index: 10;
-}
-.limit{
-	/*background: rgba(100,0,0,.2);*/
-	width: 1000px;
-	height: 100%;
-	margin: 0px auto;
-	position: relative;
-}
-
-/* ----------------- FIRST SECTION --------------*/
-
-#firstSection{
-	background-image: url("images/cornellBackground.jpg");
-	text-align: center;
-	top: 0px;
-	width: 100%;
-	height: 600px;
-	position: static;
-}
-#intro{
-	background: rgba(255,255,255,.6);
-	border-radius: 5px;
-	top: 150px;
-	margin: auto;
-	padding: 0px;
-	height: 300px;
-	width: 600px;
-	color: black;
-	position: relative;
-	z-index: 95;
-}
-#intro h1{
-	margin: 50px 0px 0px 10px;
-	padding: 0px;
-	width: 250px;
-	font-size: 40px;
-	position: relative;
-	display: inline-block;
-	z-index: 100;
-	text-align: center;
-}
-#intro img{
-	left: 25px;
-	top: 25px;
-	margin: 0px;
-	padding: 0px;
-	width: 250px;
-	height: 250px;
-	float: left;
-	display: inline-block;
-	position: relative;
-}
-#intro div{
-	top: 40px;
-	margin-left: 15px;
-	margin-right: 0px;
-	width: 230px;
-	font-size: 17px;
-	text-align: left;
-	display: inline-block;
-	position: relative;
+.icon-bar {
+  background-color: rgb(60,60,60) !important;
 }
 
 
-/* ----------------- BODY SECTIONS --------------*/
-
-
-.bodySection{
-	text-align: left;
-	top: 0px;
-	width: 100%;
-	height: 800px;
-	position: static;
+/* Bottom links container */
+#links{
+  height: 120px;
+  padding-top: 35px;
+  background-color: rgba(37,123,246,.7);
+  text-align: center;
+  color: #ffffff;
+}
+#githubIcon{
+  width: 50px;
+  height: 50px;
+  content: url("images/githubIconWhite.png")
+}
+#githubIcon:hover{
+  width: 50px;
+  height: 50px;
+  content: url("images/githubIconBlack.png")
+}
+#linkedinIcon{
+  width: 50px;
+  height: 50px;
+  content: url("images/linkedinIconWhite.png")
+}
+#linkedinIcon:hover{
+  width: 50px;
+  height: 50px;
+  content: url("images/linkedinIconBlack.png")
+}
+#resumeIcon{
+  width: 50px;
+  height: 50px;
+  content: url("images/resumeIconWhite.png")
+}
+#resumeIcon:hover{
+  width: 50px;
+  height: 50px;
+  content: url("images/resumeIconBlack.png")
 }
 
-#topFillerBodySection{
-	text-align: left;
-	top: 0px;
-	width: 100%;
-	height: 120px;
-	position: static;
+#home{
+  background-color: #ffffff;
+  height: auto;
+}
+#home img{
+  width: 100%;
+  padding-left: -10px;
 }
 
-#background2{
-	background: rgb(222,222,222);
-}
-#background3{
-	background: rgb(100,100,100);
-}
-#background4{
-	background: rgb(255,255,255);
+#projects{
+  height: 500px;
+  background-color: rgba(150,0,0,.7);
 }
 
-#projectsSection{
-	background: rgba(255,255,255,.6);
-	border-radius: 0px;
-	top: 500px;
-	margin: auto;
-	padding: 50px;
-	height: 100px;
-	width: 700px;
-	position: relative;
-	z-index: 95;
-}
-
-#navigationProjects{
-	position: relative;
-	text-align: center;
-}
-#navigationProjects li{
-	color:white;
-	list-style: none;
-	display: inline-block;
-}
-
-#navigationProjects li img{
-	padding: 0px 5px;
-	text-decoration: none;
-	color: rgb(175,175,175);
-}
-#navigationProjects li a:hover{
-	transition: color .5s;
-	text-decoration: none;
-	color: rgb(255,255,255);
+#about{
+  height: 500px;
+  background-color: rgba(200,200,200,.7)
 }
 
 
-/* ------------ CONTACT ------------ */
-
-#emailSection{
-	background: rgba(160,0,0,.6);
-	border-radius: 5px;
-	top: 300px;
-	margin: 0px 0px 0px 250px;
-	padding: 50px;
-	height: 300px;
-	width: 500px;
-	position: relative;
-	z-index: 95;
-}
-.userInput{
-
+#myFooter{
+  background-color: rgba(0,0,0,.9);
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  color: rgb(230,230,230);
+  font-size: 12px;
+  text-align: center;
 }
 
-
-/* ------------ FOOTER ------------ */
-
-#footerContainer{
-    background: rgb(0,0,0);
-    position: static;
-    top: 0px;
-    height: 50px;
-    width: 100%;
+#happiness{
+  height: 50px;
+  background-color: rgb(200,0,0);
 }
-#footer{
-    width: 22%;
-  	color: white;
-  	font-size: 12px;
-    margin: 0px auto;
-	vertical-align: center;
-	text-align: center;
-}
-#footerDiv{
-	position: relative;
-	text-decoration: none;
-	list-style: none;
-	display: inline-block;
-	bottom: 10px;
-}
-#footerImage{	
-	position: relative;
-	text-decoration: none;
-	list-style: none;
-	display: inline-block;
-	padding: 8px 10px;
-}
-

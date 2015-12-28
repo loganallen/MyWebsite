@@ -1,157 +1,99 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name = "viewport" content="widthe=device-width, initial-scale=1">
-	<title>Logan Allen</title>
+  <title>Logan Allen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- My personal Javascript file -->
+  <script src="myScript.js" type="text/javascript"></script>
+  <!-- My personal CSS file -->
 	<link href = "main.css" rel="stylesheet" type="text/css">
-	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
- 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="script.js"></script>-->
-	<!--change title image here-->
 </head>
 
-<body>
-	
-	<!-- ////////// HEADER CONTENT /////////// -->
-	
-	<div class="headerContainer">
-		<div class="header">
-			<div id="insideHeader">
+<!-- Body -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-				<div id="firstName">Logan</div>
-				<div id="lastName">ALLEN</div>
-				<div id="headerImage">
-					<a href="http://www.engineering.cornell.edu" target="_blank" title="Cornell Engineering Website"><img src="images/headerLogo.png" width=160 height = 40></a>
-				</div>
+<!-- Navigation section -->
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+  	
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#home" id="name">Logan ALLEN</a>
+    </div>
 
-				<nav id="navigationContainer">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li id="navSplitters">|</li>
-						<li><a href="#second">Profile</a></li>
-						<li id="navSplitters">|</li>
-						<li><a href="#projects">Projects</a></li>
-						<li id="navSplitters">|</li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#projects" class="active">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="mailto:lga24@cornell.edu">Contact</a></li> 
+      </ul>
+    </div>
 
-			</div>
+  </div>
+</nav>
 
-		</div>
+<!-- Remaining content of body
+		/////////////////////////// -->
+
+<div id="home">
+	<img src="images/cornellBackground.jpg">
+</div>
+
+<div id="projects">
+
+
+</div>
+
+<div id="about">
+
+
+</div>
+
+<!-- Links to github and linkedIn -->
+<div class="container-fluid" id="links">
+
+	<div class="row">
+	  <div class="col-xs-4">
+	  	<a href="http://www.github.com/loganallen" target="_blank" title="Visit Logan's Github.">
+	  	<img src="images/githubIconWhite.png" id="githubIcon"></a>
+	  </div>
+	  <div class="col-xs-4">
+	  	<a href="https://www.linkedin.com/in/logan-allen-145829a5
+" target="_blank" title="Connect with Logan on LinkedIn.">
+	  	<img src="images/linkedinIconWhite.png" id="linkedinIcon"></a>
+	  </div>
+	  <div class="col-xs-4">
+	  	<a href="#resumeSection" data-toggle="collapse" title="See Logan's Resume.">
+	  	<img src="images/resumeIconBlack.png" id="resumeIcon"></a>
+	  </div>
 	</div>
 
-	<!-- ////////// BODY CONTENT /////////// -->
+</div>
 
-	<div class="content">
+<div id="resumeSection" class="collapse container">
+	<object data="Allen_Logan_Resume.pdf" type="application/pdf" width="100%" height="500px" align="middle">
+ 
+  <p>It appears you don't have a PDF plugin for this browser.
+  No biggie... click <a href="myfile.pdf">here</a> to view my resume in dropbox.</p>
+  
+	</object>
+</div>
 
-		<a name="home"></a>
-		<div id="topFillerBodySection">
-			<div class="limit">
-
-			</div>
-		</div>
-
-		<div id="firstSection">
-			<div class="limit">
-
-				<div id="intro">
-					<h1>Hello! I'm Logan Allen.</h1>
-					<img src="images/finalFaceBrown.png">
-					<div>I'm an undergraduate student in the College of Engineering at Cornell University, class of 2018.
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-		<a name="second"></a>
-		<div class="bodySection" id="background2">
-			<div class="limit">
-
-				
-
-			</div>
-		</div>
-
-		<a name="projects"></a>
-		<div class="bodySection" id="background3">
-			<div class="limit">
-
-				<div id="projectsSection">
-					
-					<nav id="navigationProjects">
-						<ul>
-							<li>
-								<a href="https://www.dropbox.com/s/f7as8b013f1ksed/Allen_Logan_Resume.pdf?dl=0" target="_blank" title="Link to Logan's Resume" style="padding: 0px 15px 0px 0px"><img src="images/resumeIcon.png" width=75 height=75></a>
-							</li>
-							<li>
-								<a href="http://www.github.com/loganallen" target="_blank" title="View Logan's Github"><img src="images/github.png" width=192 height = 80></a>
-							</li>							
-							<li>
-								<a href="http://www.google.com" target="_blank"><img src="images/dropbox.png" width=120 height = 104></a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/profile/view?id=AAIAABZej4UBtgjrVBADcNU3bFB1-ZwuPtyS_pQ&trk=nav_responsive_tab_profile_pic" target="_blank" title="Connect with Logan on LinkedIn"><img src="images/linkedin.png" width=192 height = 80></a>
-							</li>
-						</ul>
-					</nav>
-
-				</div>
-
-			</div>
-		</div>
-
-		<a name="contact"></a>
-		<div class="bodySection" id="background4">
-			<div class="limit">
-
-				<div id="emailSection">
-					<form>
-						<div id="emailFont">Name:</div>
-						<div>
-							<input type="text" name="name">
-						</div>
-						<div id="emailFont">Email:</div>
-						<div>
-							<input type="text" name="email">
-						</div>
-						<div id="emailFont">Subject:</div>
-						<div>
-							<input type="text" name="subject">
-						</div>
-						<div id="emailFont">Message:</div>
-						<div>
-							<input type="text" name="message">
-						</div>
-					</form>
-				</div>
-				
-
-			</div>
-		</div>
-
-		<div id="footerContainer">
-			<div id="footer">
-				<div id="footerDiv">
-					© Copyright 2015 Logan Allen
-				</div>
-				<div id="footerImage">
-					<a href="mailto:lga24@cornell.edu"><img src="images/mail.png" width=30 height=30></a>
-				</div>
-				<!--
-			-->
-			</div>
-		</div>
-
-
-	</div>
+<footer class="container-fluid" id="myFooter">
+  <p style="display: inline">© Copyright 2015 Logan Allen</p>
+</footer>
 
 </body>
-
 </html>
