@@ -5,4 +5,8 @@ var main = function(){
   });
 };
 
+$(document).ready(function(){
+    $('[rel="tooltip"]').tooltip(); 
+});
+
 $(document).ready(main);
