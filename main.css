@@ -8,7 +8,16 @@
 
 /* Navigation bar items */
 .navbar{
-  background-color: rgba(255,255,255,.85);
+  background-color: rgb(255,255,255);
+  transition: top 0.5s ease-in-out, opacity .3s ease-in-out;
+}
+.nav-down{
+  top: 0px;
+  opacity: 0.9;
+}
+.nav-up{
+  top: -100px;
+  opacity: 0.3;
 }
 #name{
   color: rgb(150,0,0);
