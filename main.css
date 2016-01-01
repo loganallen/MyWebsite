@@ -11,7 +11,7 @@
   background-color: rgb(255,255,255);
   transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
   border-color: rgb(60,60,60);
-  border-width: 2;
+  border-bottom-width: 2;
 }
 .nav-down{
   top: 0px;
