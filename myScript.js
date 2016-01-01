@@ -53,3 +53,8 @@ function hasScrolled() {
 
 // $(document).ready(main);
 
+$(function(){
+    $('div.blocks div').inview({
+        'viewFactor': 0.3
+    });
+});
