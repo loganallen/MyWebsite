@@ -2,8 +2,8 @@
 
 *{
   font-family: "Optima"; 
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* //////////////////////////////////////////////////////
@@ -29,6 +29,9 @@
   color: rgb(150,0,0);
   font-size: 30px;
   margin-left: 40px;
+}
+#name span{
+  font-weight: 600;
 }
 #myNavbar ul li a{
   color: rgb(60,60,60);
@@ -67,19 +70,49 @@
                     PROJECTS SECTION
 ////////////////////////////////////////////////////// */
 
+#projectsHeader{
+  /*background-color: rgba(100,0,0,0.2);*/
+  height: 80px;
+  margin: 20px 0px;
+}
+#projectsTitle, #aboutTitle{
+  position: absolute;
+  /*background-color: rgba(0,0,255,0.5);*/
+  width: 350px;
+  height: 80px;
+  right: 4vw;
+  text-align: right;
+  /*display: none;*/
+}
+#projectsTitle h1, #aboutTitle h1{
+  /*background-color: rgba(0,0,0,0.2);*/
+  position: relative;
+  color: rgb(150,0,0);
+  font-weight: 400;
+  font-size: 40px;
+  padding: 10px 30px 15px 0px;
+  bottom: 10px;
+  right: 15px;
+  border-bottom: 2px solid rgb(50,50,50);
+  /*border-right: 2px solid rgb(50,50,50);*/
+}
+#projectsTitle h1 span, #aboutTitle h1 span{
+  font-weight: 600;
+}
+
 .grid {
   position: relative;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100vw;
   padding: 4vw;
 }
 
 figure {
   float: left;
-  min-width: 350px;
+  min-width: 360px;
   width: 40vw;
-  min-height: 300px;
+  min-height: 270px;
   height: 30vw;
   margin: 3vw; 
   background-color: rgb(255,0,0);
@@ -90,8 +123,8 @@ figure {
 ////////////////////////////////////////////////////// */
 
 #about{
-  height: 500px;
-  background-color: rgba(220,220,220,.7)
+  height: 1000px;
+  background-color: #fff;
 }
 
 /* //////////////////////////////////////////////////////
