@@ -52,7 +52,7 @@ function hasResized(){
   screenWidth = $(window).width();
 }
 
-// Smooth scrolling when navbar links are clicked
+// Smooth scrolling when links are clicked
 $(document).ready(function(){
   $('#myNavbar ul li a').click(function(){
     $('html, body').animate({
@@ -61,6 +61,12 @@ $(document).ready(function(){
     return false;
   });
   $('#name').click(function(){
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+  });
+  $('figcaption a').click(function(){
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
@@ -82,8 +88,8 @@ $(document).ready(function(){
 $(function() {
   $('.projectTile').captionHover({
     fx: 'milo',
-    headColor: '#fff',
+    headColor: '#000',
     captionColor: '#fff',
-    overlay: '#2e5d5a', 
+    overlay: '#2e5d5a',
   });
 });

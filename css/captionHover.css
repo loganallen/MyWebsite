@@ -5,12 +5,12 @@
   font-style: normal;
   font-family: "Optima"; 
 }
-.grid {
+/*.grid {
   position: relative;
   overflow: hidden;
   list-style: none;
   text-align: center;
-}
+}*/
 
 figure {
   position: relative;
@@ -46,7 +46,6 @@ figure h2 span{
 }
 figure figcaption {
   color: #fff;
-  /*text-transform: uppercase;*/
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -65,7 +64,7 @@ figure figcaption > a {
 }
 figure p {
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #fff;
   font-weight: 300;
   font-size: 16px;
@@ -112,7 +111,6 @@ figure.effect-milo h2 {
   right: 0;
   bottom: 0;
   padding: 3vw 4vw;
-  color: #000 !important;
 }
 figure.effect-milo p {
   color: #fff;
@@ -121,8 +119,8 @@ figure.effect-milo p {
   border-right: 1px solid #fff;
   text-align: right;
   opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
   -webkit-transform: translate3d(-40px, 0, 0);
   transform: translate3d(-40px, 0, 0);
 }
