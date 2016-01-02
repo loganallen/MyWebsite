@@ -37,7 +37,7 @@ figure img {
 figure h2 {
   position: absolute;
   font-weight: 400;
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin: 0;
 }
 figure h2 span{
@@ -59,7 +59,6 @@ figure figcaption:before {
 }
 figure figcaption > a {
   z-index: 1000;
-  text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
@@ -100,12 +99,12 @@ figure.effect-milo img {
 }
 figure.effect-milo:hover img {
   opacity: 0.6;
-  -webkit-transform: translate3d(0, 0, 0) scale(1.2);
-  transform: translate3d(0, 0, 0) scale(1.2);
+  -webkit-transform: translate3d(0, 0, 0) scale(2);
+  transform: translate3d(0, 0, 0) scale(2);
 }
 figure.effect-milo figcaption {
   padding: 3vw;
-  width: 80%;
+  width: 90%;
   height: 70%;
 }
 figure.effect-milo h2 {
@@ -113,6 +112,7 @@ figure.effect-milo h2 {
   right: 0;
   bottom: 0;
   padding: 3vw 4vw;
+  color: #000 !important;
 }
 figure.effect-milo p {
   color: #fff;

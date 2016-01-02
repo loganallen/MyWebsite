@@ -105,7 +105,7 @@
   overflow: hidden;
   background-color: #fff;
   width: 100vw;
-  padding: 4vw;
+  padding: 3vw 4vw;
 }
 
 figure {
@@ -116,7 +116,9 @@ figure {
   height: 30vw;
   margin: 3vw; 
   background-color: rgb(255,0,0);
+  border-radius: 5% !important;
 }
+
 
 /* //////////////////////////////////////////////////////
                     ABOUT SECTION
