@@ -68,7 +68,7 @@
     <h2>Mine<span>Sweeper</span></h2>
     <figcaption>
       <p>This iOS application is a modern take on the game "Minesweeper." It embodies a minimalistic user-interface with sleek animations and aesthetics.</p>
-      <a href="http://www.google.com">View more</a>
+      <a href="#projectsHeader" onclick="showProjectInfo();">View more</a>
     </figcaption>     
   </figure>
 
@@ -79,7 +79,7 @@
     <h2>Tower<span>Defenze</span></h2>
     <figcaption>
       <p>A fully functioning tower defense game created in python utilizing the pygame library.</p>
-      <a href="#projectsHeader">View more</a>
+      <a href="#projectsHeader" onclick="showProjectInfo();">View more</a>
     </figcaption>     
   </figure>
 
@@ -89,12 +89,37 @@
     <h2>Micro<span>Processor</span></h2>
     <figcaption>
       <p>I created a 5-staged pipelined microprocessor using Logisim. It incorporates forwarding to prevent data and control hazards.</p>
-      <a href="#projectsHeader">View more</a>
+      <a href="#projectsHeader" onclick="showProjectInfo();">View more</a>
     </figcaption>     
   </figure>
 
+  <!-- <figure class="projectTile">
+    <img src="images/purpleBackground.png">
+    <h2>Micro<span>Processor</span></h2>
+    <figcaption>
+      <p>I created a 5-staged pipelined microprocessor using Logisim. It incorporates forwarding to prevent data and control hazards.</p>
+      <a href="#projectsHeader" onclick="showProjectInfo();">View more</a>
+    </figcaption>     
+  </figure> -->
 
 </div>
+
+<div id="light" class="projectContent">
+
+  <div id="slideshow" class="shadow">
+    <img class='opaque' src="images/blueBackground.jpg" />
+    <img src="images/greenBackground.jpg" />
+    <img src="images/purpleBackground.png" />
+    <p id="slideshowLabels">
+      <span class="selected">Image 1</span>
+      <span>Image 2</span>
+      <span>Image 3</span>
+    </p>
+  </div>
+
+</div>
+    
+<div id="fade" class="black_overlay"><a href="javascript:void(0)" id="hideLink" cursor="default" onclick="hideProjectInfo()">hide</a></div>
 
 
 <div id="about">

@@ -74,6 +74,31 @@ $(document).ready(function(){
   });
 });
 
+function showProjectInfo(){
+  document.getElementById('light').style.display = 'block';
+  var backlay = document.getElementById('fade');
+  backlay.style.display = 'block';
+  backlay.style.height = document.height();
+};
+
+function hideProjectInfo(){
+  document.getElementById('light').style.display = 'none';
+  document.getElementById('fade').style.display = 'none';
+};
+
+$(document).ready(function() {
+  $("#slideshowLabels").on('click', 'span', function() {
+    $("#slideshow img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#slideshow img").eq(newImage).addClass("opaque");
+
+    $("#slideshowLabels span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});
+
 // $(function(){
 //     $('div.blocks div').inview({
 //         'viewFactor': 0.3
