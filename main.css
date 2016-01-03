@@ -90,7 +90,7 @@
   /*background-color: rgba(0,0,255,0.5);*/
   width: 350px;
   height: 80px;
-  right: 4vw;
+  right: 4%;
   text-align: right;
   /*display: none;*/
 }
@@ -114,19 +114,20 @@
 .grid {
   position: relative;
   overflow: hidden;
-  background-color: #fff;
-  width: 100vw;
-  padding: 3vw 4vw;
+  width: 100%;
+  padding-left: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
-
 figure {
   float: left;
   min-width: 360px;
-  width: 40vw;
+  width: 40%;
   min-height: 270px;
   height: 30vw;
-  margin: 3vw;
+  margin: 4%;
 }
+
 .black_overlay{
   display: none;
   position: fixed;
@@ -229,7 +230,7 @@ figure {
 #links{
   height: 120px;
   padding-top: 35px;
-  background-color: rgba(37,123,246,.7);
+  background-color: rgba(150,0,0,0.7);
   text-align: center;
   color: #ffffff;
 }
