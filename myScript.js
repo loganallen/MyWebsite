@@ -74,19 +74,22 @@ $(document).ready(function(){
   });
 });
 
-function showProjectInfo(){
-  document.getElementById('light').style.display = 'block';
+var currentProject;
+
+function showProjectInfo(id){
+  currentProject = id;
+  document.getElementById(id).style.display = 'block';
   var backlay = document.getElementById('fade');
   backlay.style.display = 'block';
   backlay.style.height = document.height();
 };
 
 function hideProjectInfo(){
-  document.getElementById('light').style.display = 'none';
+  document.getElementById(currentProject).style.display = 'none';
   document.getElementById('fade').style.display = 'none';
 };
 
-$(document).ready(function() {
+$(function() {
   $("#slideshowLabels").on('click', 'span', function() {
     $("#slideshow img").removeClass("opaque");
 

@@ -184,9 +184,7 @@ figure {
   color: rgb(150,150,150);
   transition: color 0.4s;
 }
-.selected{
-  color: black;
-}
+.selected{color: black;}
 #slideshow {
   position: relative;
   width: 460px;
@@ -195,9 +193,9 @@ figure {
 }
 #slideshow img {
   position:absolute;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  left:0;
+  left: 25%;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
