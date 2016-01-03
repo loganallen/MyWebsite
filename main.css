@@ -32,7 +32,7 @@
   color: rgb(150,0,0);
   font-size: 30px;
   margin-left: 40px;
-  text-shadow: 2px 1px rgba(50,50,50,0.2);
+  text-shadow: 1px 1px rgba(50,50,50,0.2);
 }
 #name span{
   font-weight: 600;
