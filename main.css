@@ -164,7 +164,7 @@ figure {
   margin-left: -230px;
   margin-top: -200px;
   border: 2px solid white;
-  background-color: gray;
+  background-color: rgba(255,255,255,0.7);
   z-index: 1003;
   overflow: hidden;
 }
