@@ -75,8 +75,8 @@
     <img src="images/greenBackground.jpg">
     <h2>Tower<span>Defenze</span></h2>
     <figcaption>
-      <p>A fully functioning tower defense game created in python utilizing the pygame library.</p>
-      <a href="#projectsHeader">View more</a>
+      <p>I am the designer and developer for this unique tower dense game. This locally-hosted application is created entirely in Python utilizing the Pygame library. </p>
+      <a href="#projectsHeader" onclick="showProjectInfo('towerdefenseInfo');">View more</a>
     </figcaption>     
   </figure>
 
@@ -85,7 +85,7 @@
     <h2>Micro<span>Processor</span></h2>
     <figcaption>
       <p>I created a 5-staged pipelined microprocessor using Logisim. It incorporates forwarding to prevent data and control hazards.</p>
-      <a href="#projectsHeader">View more</a>
+      <a href="#projectsHeader" onclick="showProjectInfo('processorInfo');">View more</a>
     </figcaption>     
   </figure>
 
@@ -101,15 +101,15 @@
 </div>
 
 <div id="minesweeperInfo" class="projectContent">
-  <div id="slideshow" class="shadow">
-    <img class='opaque' src="images/mineDayIntro.png" />
-    <img src="images/mineDayGame.png" />
-    <img src="images/mineDayWin.png" />
-    <img src="images/mineDayPanel.png" />
-    <img src="images/mineNightPanel.png" />
-    <img src="images/mineNightIntro.png" />
-    <img src="images/mineNightGame.png" />
-    <p id="slideshowLabels">
+  <div class="slideshow">
+    <img class='opaque' src="images/minesweeperImages/mineDayIntro.png" />
+    <img src="images/minesweeperImages/mineDayGame.png" />
+    <img src="images/minesweeperImages/mineDayWin.png" />
+    <img src="images/minesweeperImages/mineDayPanel.png" />
+    <img src="images/minesweeperImages/mineNightPanel.png" />
+    <img src="images/minesweeperImages/mineNightIntro.png" />
+    <img src="images/minesweeperImages/mineNightGame.png" />
+    <p class="slideshowLabels">
       <span class="selected">O</span>
       <span>O</span>
       <span>O</span>
@@ -120,6 +120,35 @@
     </p>
   </div>
 </div>
+
+<div id="towerdefenseInfo" class="projectContent">
+  <div class="slideshow">
+    <img class='opaque' src="images/towerdefenseImages/LevelOneActionShot.png" />
+    <img src="images/towerdefenseImages/Level23ShoppingMenu.png" />
+    <img src="images/towerdefenseImages/Level24ArrowsActionShot.png" />
+    <img src="images/towerdefenseImages/Level24FireballsActionShot.png" />
+    <p class="slideshowLabels">
+      <span class="selected">O</span>
+      <span>O</span>
+      <span>O</span>
+      <span>O</span>
+    </p>
+  </div>
+</div>
+
+<div id="processorInfo" class="projectContent">
+  <div class="slideshow">
+    <img class='opaque' src="images/processorImages/processorPart1.png" />
+    <img src="images/processorImages/processorPart2.png" />
+    <img src="images/processorImages/processorControl.png" />
+    <p class="slideshowLabels">
+      <span class="selected">O</span>
+      <span>O</span>
+      <span>O</span>
+    </p>
+  </div>
+</div>
+
 <div id="fade" class="black_overlay"><a href="javascript:void(0)" id="hideLink" cursor="default" onclick="hideProjectInfo()">hide</a></div>
 
 
@@ -143,7 +172,7 @@
 	  </div>
 	  <div class="col-xs-2">
 	  	<a href="https://www.linkedin.com/in/logan-allen-145829a5
-" target="_blank" rel="tooltip" data-placement="right" title="Connect with Logan on LinkedIn.">
+" target="_blank" rel="tooltip" data-placement="right" title="Connect on LinkedIn.">
 	  	<img src="images/linkedinIconWhite.png" id="linkedinIcon"></a>
 	  </div>
 	  <div class="col-xs-5">

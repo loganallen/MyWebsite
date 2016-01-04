@@ -90,14 +90,14 @@ function hideProjectInfo(){
 };
 
 $(function() {
-  $("#slideshowLabels").on('click', 'span', function() {
-    $("#slideshow img").removeClass("opaque");
+  $(".slideshowLabels").on('click', 'span', function() {
+    $("#"+currentProject+" .slideshow img").removeClass("opaque");
 
     var newImage = $(this).index();
 
-    $("#slideshow img").eq(newImage).addClass("opaque");
+    $("#"+currentProject+" .slideshow img").eq(newImage).addClass("opaque");
 
-    $("#slideshowLabels span").removeClass("selected");
+    $(".slideshowLabels span").removeClass("selected");
     $(this).addClass("selected");
   });
 });

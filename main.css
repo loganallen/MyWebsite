@@ -168,35 +168,41 @@ figure {
   z-index: 1003;
   overflow: hidden;
 }
+#minesweeperInfo .slideshow img{
+  width: 50%; height: 100%; left: 25%;
+}
+#towerdefenseInfo .slideshow img{
+  width: 100%; height: 100%; left: 0;
+}
+#processorInfo .slideshow img{
+  width: 100%; height: 100%; left: 0;
+}
 
-#slideshowLabels {
+.slideshowLabels {
   position: relative;
   text-align: center;
   padding-top: 360px;
   padding-left: 2em;
-  color: white;
+  color: gray;
   z-index: 1010;
 }
-#slideshowLabels span {
-  padding-right: 2em;
-  cursor:pointer;
+.slideshowLabels span {
+  font-weight: 800; padding-right: 2em; cursor:pointer;
 }
-#slideshowLabels span:hover{
-  color: rgb(150,150,150);
-  transition: color 0.4s;
+.slideshowLabels span:hover{
+  color: black; transition: color 0.4s;
 }
-.selected{color: black;}
-#slideshow {
+.selected{
+  color: black;
+}
+.slideshow {
   position: relative;
   width: 460px;
   height: 400px;
   overflow: visible;
 }
-#slideshow img {
+.slideshow img {
   position:absolute;
-  width: 50%;
-  height: 100%;
-  left: 25%;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -206,13 +212,11 @@ figure {
   filter: alpha(opacity=0);
   z-index: 1009;
 }
-
-#slideshow img.opaque {
+.slideshow img.opaque {
   opacity:1;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=1);
 }
-
 
 /* //////////////////////////////////////////////////////
                     ABOUT SECTION
@@ -230,39 +234,27 @@ figure {
 #links{
   height: 120px;
   padding-top: 35px;
-  background-color: rgba(150,0,0,0.7);
+  background-color: rgba(0,0,0,0.6);
   text-align: center;
   color: #ffffff;
 }
 #githubIcon{
-  width: 50px;
-  height: 50px;
-  content: url("images/githubIconWhite.png")
+  width: 50px; height: 50px; content: url("images/githubIconWhite.png")
 }
 #githubIcon:hover{
-  width: 50px;
-  height: 50px;
-  content: url("images/githubIconBlack.png")
+  width: 50px; height: 50px; content: url("images/githubIconBlack.png")
 }
 #linkedinIcon{
-  width: 50px;
-  height: 50px;
-  content: url("images/linkedinIconWhite.png")
+  width: 50px; height: 50px; content: url("images/linkedinIconWhite.png")
 }
 #linkedinIcon:hover{
-  width: 50px;
-  height: 50px;
-  content: url("images/linkedinIconBlack.png")
+  width: 50px; height: 50px; content: url("images/linkedinIconBlack.png")
 }
 #resumeIcon{
-  width: 50px;
-  height: 50px;
-  content: url("images/resumeIconWhite.png")
+  width: 50px; height: 50px; content: url("images/resumeIconWhite.png")
 }
 #resumeIcon:hover{
-  width: 50px;
-  height: 50px;
-  content: url("images/resumeIconBlack.png")
+  width: 50px; height: 50px; content: url("images/resumeIconBlack.png")
 }
 
 /* //////////////////////////////////////////////////////
@@ -304,7 +296,6 @@ figure {
   -moz-transform: translateX(-80px);
   transform: translateX(-80px);
 }
-
 .block-right {
   opacity: 0;
   -webkit-transform: translateX(80px);
