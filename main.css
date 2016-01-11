@@ -242,19 +242,19 @@ figure {
   width: 50px; height: 50px; content: url("images/githubIconWhite.png")
 }
 #githubIcon:hover{
-  width: 50px; height: 50px; content: url("images/githubIconBlack.png")
+  width: 50px; height: 50px; content: url("images/githubIconRed.png")
 }
 #linkedinIcon{
   width: 50px; height: 50px; content: url("images/linkedinIconWhite.png")
 }
 #linkedinIcon:hover{
-  width: 50px; height: 50px; content: url("images/linkedinIconBlack.png")
+  width: 50px; height: 50px; content: url("images/linkedinIconRed.png")
 }
 #resumeIcon{
   width: 50px; height: 50px; content: url("images/resumeIconWhite.png")
 }
 #resumeIcon:hover{
-  width: 50px; height: 50px; content: url("images/resumeIconBlack.png")
+  width: 50px; height: 50px; content: url("images/resumeIconRed.png")
 }
 
 /* //////////////////////////////////////////////////////
