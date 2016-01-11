@@ -11,13 +11,14 @@
 ////////////////////////////////////////////////////// */
 
 .navbar{
-  background-color: rgb(255,255,255);
+  background-color: #fff;
   -webkit-transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
   -moz-transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
   -o-transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
   transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
-  border-color: rgb(60,60,60);
-  border-bottom-width: 2;
+  /*border-color: rgb(60,60,60);*/
+  /*border-bottom-width: 2;*/
+  z-index: 1200;
 }
 .nav-down{
   top: 0px;
@@ -81,13 +82,19 @@
 ////////////////////////////////////////////////////// */
 
 #projectsHeader{
-  /*background-color: rgba(100,0,0,0.2);*/
+  /*background-color: rgba(15,15,15,0.9);*/
   height: 80px;
-  margin: 20px 0px;
+  margin: 0px;
+  padding-top: 10px;
+}
+#aboutHeader{
+  background-color: rgba(0,0,0,0.6);
+  height: 80px;
+  margin: 0px;
+  padding-top: 10px;
 }
 #projectsTitle, #aboutTitle{
   position: absolute;
-  /*background-color: rgba(0,0,255,0.5);*/
   width: 350px;
   height: 80px;
   right: 4%;
@@ -95,7 +102,6 @@
   /*display: none;*/
 }
 #projectsTitle h1, #aboutTitle h1{
-  /*background-color: rgba(0,0,0,0.2);*/
   position: relative;
   color: rgb(150,0,0);
   font-weight: 400;
@@ -103,9 +109,14 @@
   padding: 10px 30px 15px 0px;
   bottom: 10px;
   right: 15px;
-  border-bottom: 2px solid rgb(50,50,50);
-  text-shadow: 2px 1px rgba(50,50,50,0.2);
+  border-bottom: 2px solid #000;
+  z-index: 1000;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
   /*border-right: 2px solid rgb(50,50,50);*/
+}
+#aboutTitle h1{
+  border-bottom: 2px solid #fff;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 #projectsTitle h1 span, #aboutTitle h1 span{
   font-weight: 600;
@@ -118,6 +129,7 @@
   padding-left: 4%;
   padding-top: 4%;
   padding-bottom: 4%;
+  /*background-color: rgba(15,15,15,0.9);*/
 }
 figure {
   float: left;
@@ -164,7 +176,7 @@ figure {
   margin-left: -230px;
   margin-top: -200px;
   border: 2px solid white;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.5);
   z-index: 1003;
   overflow: hidden;
 }
@@ -222,9 +234,17 @@ figure {
                     ABOUT SECTION
 ////////////////////////////////////////////////////// */
 
-#about{
-  height: 1000px;
+#aboutContainer{
+  padding: 10%;
+  background-color: rgba(0,0,0,0.6);
+}
+#test{
   background-color: #fff;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  position: absolute;
+  display: none;
 }
 
 /* //////////////////////////////////////////////////////
@@ -232,11 +252,12 @@ figure {
 ////////////////////////////////////////////////////// */
 
 #links{
-  height: 120px;
+  height: 100px;
   padding-top: 35px;
   background-color: rgba(0,0,0,0.6);
   text-align: center;
-  color: #ffffff;
+  color: #fff;
+  position: relative;
 }
 #githubIcon{
   width: 50px; height: 50px; content: url("images/githubIconWhite.png")
@@ -262,7 +283,7 @@ figure {
 ////////////////////////////////////////////////////// */
 
 #myFooter{
-  background-color: rgba(0,0,0,.9);
+  background-color: rgba(0,0,0,.6);
   width: 100%;
   height: 50px;
   padding: 15px;
@@ -275,7 +296,7 @@ figure {
                       BLOCKS
 ////////////////////////////////////////////////////// */
 
-/*.blocks, .blocks-left, .blocks-right {
+.blocks, .blocks-left, .blocks-right {
   margin: 20px;
   padding: 10px;
   background-color: #eee;
@@ -301,4 +322,4 @@ figure {
   -webkit-transform: translateX(80px);
   -moz-transform: translateX(80px);
   transform: translateX(80px);
-}*/
+}

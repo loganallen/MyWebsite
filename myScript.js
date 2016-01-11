@@ -121,3 +121,25 @@ $(function() {
     overlay: '#2e5d5a',
   });
 });
+
+$(function() {
+  
+  // $("#down").RisingSun({
+  //   timer:1500,duration:300,ease:"easeOutCubic"
+  // });
+  // $("#fadein").RisingSun({duration:300,startPosition:0.65});
+  // $("#test").RisingSun({duration:500,scale:0.1,ease:"easeInCubic",startPosition:0.9});
+  // $("#movein").RisingSun({duration:800,x:50,y:100,ease:"easeOutCubic",startPosition:0.55});
+  // $("#popin").RisingSun({
+  //   duration:300,scale:0.1,popanime:true,ease:"easeOutCubic"
+  // });
+  // $("#test").RisingSun({
+  //   duration:1200,wipe:"LR",ease:"easeInOutCubic",startPosition:0.6
+  // });
+  $("#test").RisingSun({
+    duration:1200,slide:"LR",ease:"easeInOutCubic",startPosition:0.9
+  });
+  // $("#rotatein").RisingSun({
+  //   duration:800,scale:0.1,rotate:360,ease:"easeInOutCubic",startPosition:0.7
+  // });
+});
