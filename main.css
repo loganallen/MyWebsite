@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 *{
-  font-family: "Optima"; 
-  margin: 0;
-  padding: 0;
+  font-family: "Optima"; margin: 0; padding: 0;
 }
 
 /* //////////////////////////////////////////////////////
@@ -16,17 +14,13 @@
   -moz-transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
   -o-transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
   transition: top 0.5s ease-in-out, opacity .2s ease-in-out;
-  /*border-color: rgb(60,60,60);*/
-  /*border-bottom-width: 2;*/
   z-index: 1200;
 }
 .nav-down{
-  top: 0px;
-  opacity: 0.9;
+  top: 0px; opacity: 0.9;
 }
 .nav-up{
-  top: -200px;
-  opacity: 0.3;
+  top: -200px; opacity: 0.3;
 }
 #name{
   font-weight: 400;
@@ -39,9 +33,7 @@
   font-weight: 600;
 }
 #myNavbar ul li a{
-  color: rgb(60,60,60);
-  font-size: 16px;
-  text-align: right;
+  color: rgb(60,60,60); font-size: 16px; text-align: right;
 }
 #myNavbar ul li a:hover{
   -webkit-transition: color .4s, background-color .3s;
@@ -82,10 +74,7 @@
 ////////////////////////////////////////////////////// */
 
 #projectsHeader, #aboutHeader{
-  /*background-color: rgba(15,15,15,0.9);*/
-  height: 80px;
-  margin: 0px;
-  padding-top: 10px;
+  height: 80px; margin: 0px; padding-top: 10px;
 }
 #aboutHeader{
   margin-bottom: 50px;
@@ -201,10 +190,7 @@ figure {
   color: black;
 }
 .slideshow {
-  position: relative;
-  width: 460px;
-  height: 400px;
-  overflow: visible;
+  position: relative; width: 460px; height: 400px; overflow: visible;
 }
 .slideshow img {
   position:absolute;
@@ -236,9 +222,7 @@ figure {
 }
 
 .blocks{
-  margin: 50px auto;
-  /*background-color: #422;*/
-  text-align: center;
+  margin: 50px auto; text-align: center;
 }
 .blocks div{
   background-color: rgba(255,255,255,0.8);
