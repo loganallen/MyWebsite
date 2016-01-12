@@ -15,7 +15,7 @@
 figure {
   position: relative;
   overflow: hidden;
-  width: 500px;
+  /*width: 500px;*/
   text-align: center;
   cursor: pointer;
 }

@@ -102,11 +102,10 @@ $(function() {
   });
 });
 
-// $(function(){
-//     $('div.blocks div').inview({
-//         'viewFactor': 0.3
-//     });
-// });
+$(function(){
+    $('.blocks div').inview({'viewFactor': 0.8});
+    $('.blocks2 div').inview({'viewFactor': 0.8});
+});
 
 // $(function(){
 //   $('.stack').stack();
@@ -136,9 +135,9 @@ $(function() {
   // $("#test").RisingSun({
   //   duration:1200,wipe:"LR",ease:"easeInOutCubic",startPosition:0.6
   // });
-  $("#test").RisingSun({
-    duration:1200,slide:"LR",ease:"easeInOutCubic",startPosition:0.9
-  });
+  // $("#test").RisingSun({
+  //   duration:1200,slide:"LR",ease:"easeInOutCubic",startPosition:0.9
+  // });
   // $("#rotatein").RisingSun({
   //   duration:800,scale:0.1,rotate:360,ease:"easeInOutCubic",startPosition:0.7
   // });
