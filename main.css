@@ -255,14 +255,12 @@ figure {
 }
 .block-left {
   opacity: 0;
-  right: 50px;
   -webkit-transform: translateX(-150px);
   -moz-transform: translateX(-150px);
   transform: translateX(-150px);
 }
 .block-right {
   opacity: 0;
-  left: 50px;
   -webkit-transform: translateX(150px);
   -moz-transform: translateX(150px);
   transform: translateX(150px);
@@ -279,9 +277,22 @@ figure {
   padding-bottom: 25px;
   margin-top: 100px;
   background-color: rgba(0,0,0,0.5);
-  text-align: center;
   color: #fff;
   position: relative;
+}
+.linkTile{
+  text-align: center;
+}
+.linkTile div{
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  -moz-transition: -moz-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+}
+.link-right{
+  opacity: 0;
+  -webkit-transform: translateY(-35px);
+  -moz-transform: translateY(-35px);
+  transform: translateY(-35px);
 }
 #githubIcon{
   width: 50px; height: 50px; content: url("images/githubIconWhite.png")
@@ -314,4 +325,15 @@ figure {
   color: rgb(230,230,230);
   font-size: 12px;
   text-align: center;
+}
+#myFooter div{
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+  -moz-transition: -moz-transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+}
+.footerLeft{
+  opacity: 0;
+  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  transform: translateX(-200px);
 }

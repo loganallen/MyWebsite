@@ -104,7 +104,8 @@ $(function() {
 
 $(function(){
     $('.blocks div').inview({'viewFactor': 0.8});
-    $('.blocks2 div').inview({'viewFactor': 0.8});
+    $('.linkTile div').inview({'viewFactor': 1.0});
+    $('#myFooter div').inview({'viewFactor': 1.0});
 });
 
 // $(function(){
@@ -126,9 +127,9 @@ $(function() {
   // $("#down").RisingSun({
   //   timer:1500,duration:300,ease:"easeOutCubic"
   // });
-  // $("#fadein").RisingSun({duration:300,startPosition:0.65});
-  // $("#test").RisingSun({duration:500,scale:0.1,ease:"easeInCubic",startPosition:0.9});
-  // $("#movein").RisingSun({duration:800,x:50,y:100,ease:"easeOutCubic",startPosition:0.55});
+  // $(".linkTile").RisingSun({duration:300,startPosition:1});
+  // $(".linkTile").RisingSun({duration:500,scale:0.1,ease:"easeInCubic",startPosition:0.9});
+  // $(".linkTile").RisingSun({duration:800,x:50,y:100,ease:"easeOutCubic",startPosition:0.55});
   // $("#popin").RisingSun({
   //   duration:300,scale:0.1,popanime:true,ease:"easeOutCubic"
   // });
