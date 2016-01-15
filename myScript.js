@@ -104,8 +104,9 @@ $(function() {
 
 $(function(){
     $('.blocks div').inview({'viewFactor': 0.8});
-    $('.linkTile div').inview({'viewFactor': 1.0});
-    $('#myFooter div').inview({'viewFactor': 1.0});
+    $('#links').inview({'viewFactor': 0.7});
+    $('.linkTile div').inview({'viewFactor': 0.9});
+    $('#myFooter div').inview({'viewFactor': 0.1});
 });
 
 // Caption Hover for project images
