@@ -102,12 +102,6 @@ $(function() {
   });
 });
 
-$(function(){
-    $('.blocks div').inview({'viewFactor': 0.6});
-    $('#links').inview({'viewFactor': 0.5});
-    $('.linkTile div').inview({'viewFactor': 1});
-    $('#myFooter div').inview({'viewFactor': 0.1});
-});
 
 // Caption Hover for project images
 $(function() {
@@ -115,28 +109,14 @@ $(function() {
     fx: 'milo',
     headColor: '#000',
     captionColor: '#fff',
-    overlay: '#2e5d5a',
+    overlay: '#122524',
   });
 });
 
-$(function() {
-  
-  // $("#down").RisingSun({
-  //   timer:1500,duration:300,ease:"easeOutCubic"
-  // });
-  // $(".linkTile").RisingSun({duration:300,startPosition:1});
-  // $(".linkTile").RisingSun({duration:500,scale:0.1,ease:"easeInCubic",startPosition:0.9});
-  // $(".linkTile").RisingSun({duration:800,x:50,y:100,ease:"easeOutCubic",startPosition:0.55});
-  // $("#popin").RisingSun({
-  //   duration:300,scale:0.1,popanime:true,ease:"easeOutCubic"
-  // });
-  // $("#test").RisingSun({
-  //   duration:1200,wipe:"LR",ease:"easeInOutCubic",startPosition:0.6
-  // });
-  // $("#test").RisingSun({
-  //   duration:1200,slide:"LR",ease:"easeInOutCubic",startPosition:0.9
-  // });
-  // $("#rotatein").RisingSun({
-  //   duration:800,scale:0.1,rotate:360,ease:"easeInOutCubic",startPosition:0.7
-  // });
+$(function(){
+    $('.blocks div').inview({'viewFactor': 0.6});
+    $('#links').inview({'viewFactor': 0.5});
+    $('.linkTile div').inview({'viewFactor': 1});
+    $('#myFooter div').inview({'viewFactor': 0.1});
+    $('.projectTileContainer div').inview({'viewFactor': 0.4});
 });

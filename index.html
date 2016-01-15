@@ -37,13 +37,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#home" id="name">Logan <span>Allen</span></a>
+      <a class="navbar-brand" href="#homeContainer" id="name">Logan <span>Allen</span></a>
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#projectsHeader">Projects</a></li>
-        <li><a href="#aboutHeader">About</a></li>
+        <li><a href="#projectsContainer">Projects</a></li>
+        <li><a href="#aboutContainer">About</a></li>
         <li><a href="mailto:lga24@cornell.edu">Contact</a></li> 
       </ul>
     </div>
@@ -54,12 +54,12 @@
 <!-- Remaining content of body
 		/////////////////////////// -->
 
-<div id="home"></div>
+<div class="container-fluid" id="homeContainer"></div>
 
 <!-- PROJECTS SECITON 
     ////////////////// -->
 
-<div class="container-fluid" id="projectsHeader">
+<!-- <div class="container-fluid" id="projectsHeader">
   <div id="projectsTitle">
     <h1>My <span>Projects</span></h1>
   </div>
@@ -93,15 +93,6 @@
       <a href="#projectsHeader" onclick="showProjectInfo('processorInfo');">View more</a>
     </figcaption>     
   </figure>
-
-<!--   <figure class="projectTile">
-    <img src="images/purpleBackground.png">
-    <h2>Micro<span>Processor</span></h2>
-    <figcaption>
-      <p>I created a 5-staged pipelined microprocessor using Logisim. It incorporates forwarding to prevent data and control hazards.</p>
-      <a href="#projectsHeader" onclick="showProjectInfo();">View more</a>
-    </figcaption>     
-  </figure> -->
 
 </div>
 
@@ -154,30 +145,74 @@
   </div>
 </div>
 
-<div id="fade" class="black_overlay"><a href="javascript:void(0)" id="hideLink" cursor="default" onclick="hideProjectInfo()">hide</a></div>
+<div id="fade" class="black_overlay"><a href="javascript:void(0)" id="hideLink" cursor="default" onclick="hideProjectInfo()">hide</a></div> -->
 
+
+<div class="container-fluid" id="projectsContainer">
+
+  <div class="sectionHeader">
+    <div><h1>My <span>Projects</span></h1></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 projectTileContainer">
+      <div data-class-in="" data-class-out="projectTileDisappear">
+      <figure class="projectTile">
+        <img src="images/mineSweeperIcon.jpg">
+        <h2>Mine<span>Sweeper</span></h2>
+        <figcaption>
+          <p>This iOS application is a modern take on the game "Minesweeper." I developed this with another Cornellian to learn Swift and Xcode as well as to make an actual product. </p>
+          <a href="#projectsHeader" onclick="showProjectInfo('minesweeperInfo');">View more</a>
+        </figcaption>      
+      </figure>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 projectTileContainer">
+      <div data-class-in="" data-class-out="projectTileDisappear">
+      <figure class="projectTile">
+        <img src="images/towerDefenzeIcon.png">
+        <h2>Tower<span>Defenze</span></h2>
+        <figcaption>
+          <p>I am the designer and developer for this unique tower defense game. This locally-hosted application is created entirely in Python utilizing the Pygame library. </p>
+          <a href="#projectsHeader" onclick="showProjectInfo('towerdefenseInfo');">View more</a>
+        </figcaption>     
+      </figure>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 projectTileContainer">
+      <div data-class-in="" data-class-out="projectTileDisappear">
+      <figure class="projectTile">
+        <img src="images/microprocessorIcon.png">
+        <h2>Micro<span>Processor</span></h2>
+        <figcaption>
+          <p>I created a 5-staged pipelined microprocessor using Logisim. It incorporates forwarding to prevent data and control hazards.</p>
+          <a href="#projectsHeader" onclick="showProjectInfo('processorInfo');">View more</a>
+        </figcaption>     
+      </figure>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ABOUT SECTION 
     /////////////// -->
 
 <div class="container-fluid" id="aboutContainer">
 
-  <div id="aboutHeader">
-    <div id="aboutTitle">
-      <h1><span>About</span></h1>
-    </div>
+  <div class="sectionHeader">
+    <div><h1><span>About</span></h1></div>
   </div>
 
   <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-6 blocks">
-    <div data-class-in="" data-class-out="block-left">
+    <div data-class-in="" data-class-out="blockLeft">
       <p> Logan is a self-motivated software engineer completing his undergraduate education at Cornell University. </p>
       <img src="images/portait.png" width="65%" height="65%" style="margin: 5%">
       <p> He currently pursues a B.S. in Computer Science and a minor in Business. </p>
     </div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-6 blocks">
-    <div data-class-in="" data-class-out="block-right">
+    <div data-class-in="" data-class-out="blockRight">
       <p> Apart from sophisticated computer science projects completed for class, Logan has created several iOS applications and locally-hosted games using graphics libraries in Java and Python. </p>
       <p> Logan really enjoys the simplicity of nature and strengthening social bonds with everyone in his life. He spends a significant amount of time playing volleyball, but smiles and laughs all the time. </p>
     </div>
@@ -191,23 +226,23 @@
 
   <div class="row">
     <div class="col-xs-4 linkTile">
-      <div data-class-in="" data-class-out="link-right">
+      <div data-class-in="" data-class-out="linkUpRight">
       <a href="http://www.github.com/loganallen" target="_blank" rel="tooltip" data-placement="right" title="Visit Logan's Github.">
-      <img src="images/githubIconWhite.png" id="githubIcon"></a>
+      <img src="images/links/githubIconWhite.png" id="githubIcon"></a>
       </div>
     </div>
     <div class="col-xs-4 linkTile">
-      <div data-class-in="" data-class-out="link-right">
+      <div data-class-in="" data-class-out="linkUp">
       <a href="https://www.linkedin.com/in/logan-allen-145829a5
 " target="_blank" rel="tooltip" data-placement="right" title="Connect on LinkedIn.">
-      <img src="images/linkedinIconWhite.png" id="linkedinIcon"></a>
+      <img src="images/links/linkedinIconWhite.png" id="linkedinIcon"></a>
       </div>  
     </div>
     <div class="col-xs-4 linkTile">
-      <div data-class-in="" data-class-out="link-right">
+      <div data-class-in="" data-class-out="linkUpLeft">
       <!-- <a href="#resumeSection" data-toggle="collapse" rel="tooltip" data-placement="left" title="See Logan's Resume."> -->
       <a href="Allen_Logan_Resume.pdf" target="_blank" rel="tooltip" data-placement="left" title="See Logan's Resume.">
-      <img src="images/resumeIconBlack.png" id="resumeIcon"></a>
+      <img src="images/links/resumeIconBlack.png" id="resumeIcon"></a>
       </div>
     </div>
   </div>

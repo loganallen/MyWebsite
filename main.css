@@ -40,7 +40,7 @@
   -moz-transition: color .4s, background-color .3s;
   -o-transition: color .4s, background-color .3s;
   transition: color .4s, background-color .3s;
-  color: rgb(255,255,255);
+  color: #fff;
   background-color: rgba(100,0,0,.2);
 }
 .navbar-toggle{
@@ -61,7 +61,7 @@
                     HOME SECTION
 ////////////////////////////////////////////////////// */
 
-#home{
+#homeContainer{
   width: 100%;
   height: 460px;
   text-align: center;
@@ -69,17 +69,15 @@
   background-image: url("images/cornellBackground.jpg");
 }
 
+
 /* //////////////////////////////////////////////////////
                     PROJECTS SECTION
 ////////////////////////////////////////////////////// */
 
-#projectsHeader, #aboutHeader{
-  height: 80px; margin: 0px; padding-top: 10px;
+.sectionHeader{
+  height: 80px; margin: 0px; padding-top: 10px; margin-bottom: 50px;
 }
-#aboutHeader{
-  margin-bottom: 50px;
-}
-#projectsTitle, #aboutTitle{
+.sectionHeader div{
   position: absolute;
   width: 350px;
   height: 80px;
@@ -87,7 +85,7 @@
   text-align: right;
   /*display: none;*/
 }
-#projectsTitle h1, #aboutTitle h1{
+.sectionHeader div h1{
   position: relative;
   color: rgb(150,0,0);
   font-weight: 400;
@@ -100,8 +98,25 @@
   text-shadow: 1px 1px rgba(0,0,0,0.3);
   /*border-right: 2px solid rgb(50,50,50);*/
 }
-#projectsTitle h1 span, #aboutTitle h1 span{
+.sectionHeader div h1 span{
   font-weight: 600;
+}
+
+#projectsContainer{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+.projectTileContainer{
+    margin: 5% 0; text-align: center;
+}
+.projectTileContainer div{
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+.projectTileDisappear{
+  opacity: 0;
 }
 
 .grid {
@@ -113,13 +128,17 @@
   padding-bottom: 4%;
   /*background-color: rgba(15,15,15,0.9);*/
 }
-figure {
+/*figure {
   float: left;
   min-width: 360px;
   width: 40%;
   min-height: 270px;
   height: 30vw;
   margin: 4%;
+}*/
+figure{
+  width: 80%;
+  margin: 0 auto;
 }
 
 .black_overlay{
@@ -215,14 +234,13 @@ figure {
 
 #aboutContainer{
   width: 100%;
-  /*height: 700px;*/
   text-align: center;
   background-size: cover;
   background-image: url("images/yosemite.jpg");
 }
 
 .blocks{
-  margin: 50px auto; text-align: center;
+  margin: 30px auto; text-align: center;
 }
 .blocks div{
   background-color: rgba(255,255,255,0.8);
@@ -237,17 +255,17 @@ figure {
 .blocks div p{
   font-size: 16px;
 }
-.block-left {
+.blockLeft {
   opacity: 0;
-  -webkit-transform: translateX(-150px);
-  -moz-transform: translateX(-150px);
-  transform: translateX(-150px);
+  -webkit-transform: translate3d(-150px,50px,0);
+  -moz-transform: translate3d(-150px,50px,0);
+  transform: translate3d(-150px,50px,0);
 }
-.block-right {
+.blockRight {
   opacity: 0;
-  -webkit-transform: translateX(150px);
-  -moz-transform: translateX(150px);
-  transform: translateX(150px);
+  -webkit-transform: translate3d(150px,50px,0);
+  -moz-transform: translate3d(150px,50px,0);
+  transform: translate3d(150px,50px,0);
 }
 
 /* //////////////////////////////////////////////////////
@@ -257,7 +275,7 @@ figure {
 #links{
   width: 100%;
   padding: 3.5%;
-  margin-top: 100px;
+  margin-top: 70px;
   background-color: rgba(0,0,0,0.5);
   color: #fff;
   position: relative;
@@ -279,29 +297,41 @@ figure {
   -moz-transition: -moz-transform 1.4s, opacity 1.4s;
   transition: transform 1.4s, opacity 1.4s;
 }
-.link-right{
+.linkUp{
   opacity: 0;
   -webkit-transform: translateY(25px);
   -moz-transform: translateY(25px);
   transform: translateY(25px);
 }
+.linkUpLeft{
+  opacity: 0;
+  -webkit-transform: translate3d(-15px,45px,0);
+  -moz-transform: translate3d(-15px,45px,0);
+  transform: translate3d(-15px,45px,0);
+}
+.linkUpRight{
+  opacity: 0;
+  -webkit-transform: translate3d(15px,45px,0);
+  -moz-transform: translate3d(15px,45px,0);
+  transform: translate3d(15px,45px,0);
+}
 #githubIcon{
-  width: 50px; height: 50px; content: url("images/githubIconWhite.png")
+  width: 50px; height: 50px; content: url("images/links/githubIconWhite.png")
 }
 #githubIcon:hover{
-  width: 50px; height: 50px; content: url("images/githubIconRed.png")
+  width: 50px; height: 50px; content: url("images/links/githubIconRed.png")
 }
 #linkedinIcon{
-  width: 50px; height: 50px; content: url("images/linkedinIconWhite.png")
+  width: 50px; height: 50px; content: url("images/links/linkedinIconWhite.png")
 }
 #linkedinIcon:hover{
-  width: 50px; height: 50px; content: url("images/linkedinIconRed.png")
+  width: 50px; height: 50px; content: url("images/links/linkedinIconRed.png")
 }
 #resumeIcon{
-  width: 50px; height: 50px; content: url("images/resumeIconWhite.png")
+  width: 50px; height: 50px; content: url("images/links/resumeIconWhite.png")
 }
 #resumeIcon:hover{
-  width: 50px; height: 50px; content: url("images/resumeIconRed.png")
+  width: 50px; height: 50px; content: url("images/links/resumeIconRed.png")
 }
 
 /* //////////////////////////////////////////////////////
