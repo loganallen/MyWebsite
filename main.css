@@ -82,8 +82,16 @@
   width: 350px;
   height: 80px;
   right: 4%;
-  text-align: right;
-  /*display: none;*/
+  text-align: right;  
+  -webkit-transition: -webkit-transform 0.8s, opacity 1s;
+  -moz-transition: -moz-transform 0.8s, opacity 1s;
+  transition: transform 0.8s, opacity 1s;
+}
+.headerAnimation{
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  transform: translateX(100px);
 }
 .sectionHeader div h1{
   position: relative;
