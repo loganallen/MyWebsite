@@ -57,19 +57,19 @@ $(document).ready(function(){
   $('#myNavbar ul li a').click(function(){
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+    }, 700);
     return false;
   });
   $('#name').click(function(){
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+    }, 700);
     return false;
   });
   $('figcaption a').click(function(){
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+    }, 700);
     return false;
   });
 });
@@ -104,7 +104,7 @@ $(function() {
 
 $(function(){
     $('.blocks div').inview({'viewFactor': 0.8});
-    $('#links').inview({'viewFactor': 0.7});
+    $('#links').inview({'viewFactor': 0.5});
     $('.linkTile div').inview({'viewFactor': 0.9});
     $('#myFooter div').inview({'viewFactor': 0.1});
 });
