@@ -108,10 +108,6 @@ $(function(){
     $('#myFooter div').inview({'viewFactor': 1.0});
 });
 
-// $(function(){
-//   $('.stack').stack();
-// });
-
 // Caption Hover for project images
 $(function() {
   $('.projectTile').captionHover({
