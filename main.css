@@ -116,7 +116,7 @@
   background-color: #fff;
 }
 .projectTileContainer{
-    margin: 5% 0; text-align: center;
+    margin: 3% 0% 8% 0%; text-align: center;
 }
 .projectTileContainer div{
   -webkit-transition: opacity 1s;
