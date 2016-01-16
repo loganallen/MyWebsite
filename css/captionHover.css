@@ -5,12 +5,6 @@
   font-style: normal;
   font-family: "Optima"; 
 }
-/*.grid {
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  text-align: center;
-}*/
 
 figure {
   position: relative;
@@ -95,22 +89,22 @@ figure.effect-milo img {
   backface-visibility: hidden;
 }
 figure.effect-milo:hover img {
-  opacity: 0.5;
+  opacity: 0.4;
   -webkit-transform: translate3d(30px, 0, 0) scale(1.2);
   transform: translate3d(30px, 0, 0) scale(1.2);
 }
 figure.effect-milo figcaption {
   position: absolute;
   padding: 2em;
-  width: 85%;
-  height: 80%;
+  width: 90%;
+  /*height: 80%;*/
   top: 0;
 }
 figure.effect-milo h2 {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 1em 2em;
+  padding: 1em 1em;
   color: #000 !important;
   -webkit-transition: color .45s;
   -moz-transition: color .45s;

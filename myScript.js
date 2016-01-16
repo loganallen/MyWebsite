@@ -109,12 +109,12 @@ $(function() {
     fx: 'milo',
     headColor: '#000',
     captionColor: '#fff',
-    overlay: '#122524',
+    overlay: '#192C2E',
   });
 });
 
 $(function(){
-    //$('.projectTileContainer div').inview({'viewFactor': 0.6});
+    // $('.projectTileContainer div').inview({'viewFactor': 0.4});
     $('.sectionHeader div').inview({'viewFactor': 0.8});
     $('.blocks div').inview({'viewFactor': 0.6});
     $('#links').inview({'viewFactor': 0.5});
