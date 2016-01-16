@@ -102,7 +102,6 @@ $(function() {
   });
 });
 
-
 // Caption Hover for project images
 $(function() {
   $('.projectTile').captionHover({

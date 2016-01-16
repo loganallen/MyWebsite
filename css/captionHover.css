@@ -63,8 +63,8 @@ figure p {
   text-align: center;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+figure figcaption,
+figure figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
