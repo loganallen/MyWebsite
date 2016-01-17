@@ -36,7 +36,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#homeContainer" id="name">Logan <span>Allen</span></a>
+      <a class="navbar-brand" href="#home" id="name">Logan <span>Allen</span></a>
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -53,11 +53,12 @@
 <!-- Remaining content of body
 		/////////////////////////// -->
 
-<div class="container-fluid" id="homeContainer"></div>
+<header class="parallax-zoom-blur" id="home"> <img src="images/cornellBackground.jpg"> </header>
 
-<!-- PROJECTS SECITON 
+<!-- PROJECTS SECTION 
     ////////////////// -->
 
+<main role="main">
 <div class="container-fluid" id="projectsContainer">
 
   <div class="sectionHeader">
@@ -82,7 +83,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 projectTileContainer">
       <div data-class-in="" data-class-out="projectTileDisappear">
       <figure class="projectTile">
-        <img src="images/towerDefenzeIcon.png">
+        <img src="images/towerDefenseIcon.png">
         <h2>Tower<span>Defense</span></h2>
         <figcaption>
           <p>I am the designer and developer for this unique tower defense game. This locally-hosted application is created entirely in Python utilizing the Pygame library. </p>
@@ -105,61 +106,68 @@
     </div>
   </div>
 </div>
+</main>
 
 <!-- POPOVER PROJECT SECTION
     //////////////////////// -->
 
-<div id="minesweeperInfo" class="projectContent">
-  <div class="slideshow">
-    <img class='opaque' src="images/minesweeperImages/mineDayIntro.png" />
-    <img src="images/minesweeperImages/mineDayGame.png" />
-    <img src="images/minesweeperImages/mineDayWin.png" />
-    <img src="images/minesweeperImages/mineDayPanel.png" />
-    <img src="images/minesweeperImages/mineNightPanel.png" />
-    <img src="images/minesweeperImages/mineNightIntro.png" />
-    <img src="images/minesweeperImages/mineNightGame.png" />
-    <p class="slideshowLabels">
-      <span class="selected">O</span>
-      <span>O</span>
-      <span>O</span>
-      <span>O</span>
-      <span>O</span>
-      <span>O</span>
-      <span>O</span>
-    </p>
+<div class="projectPopover" id="minesweeperInfo">
+  <div id="projectLinks">
+    <div class="popoverHeader"><h2>Mine<span>Sweeper</span></h2></div>
+    <div class="row">
+    <div class="col-xs-6 projectLinkTile">
+      <div data-class-in="" data-class-out="linkUpRight">
+      <a href="https://github.com/amg445/MineSweeperGame.git" target="_blank" rel="tooltip" data-placement="right" title="View Source Code." onclick="hideProjectInfo()">
+      <img src="images/links/githubIconWhite.png" id="projectGithubIcon"></a>
+      </div>
+    </div>
+    <div class="col-xs-6 projectLinkTile">
+      <div data-class-in="" data-class-out="linkUpRight">
+      <a href="minesweeperInfo.html" rel="tooltip" data-placement="left" title="See project.">
+      <img src="images/links/imagesIconWhite.png" id="projectImagesIcon"></a>
+      </div>
+    </div>
+    </div>
   </div>
 </div>
 
-<div id="towerdefenseInfo" class="projectContent">
-  <div class="slideshow">
-    <img class='opaque' src="images/towerdefenseImages/LevelOneActionShot.png" />
-    <img src="images/towerdefenseImages/Level23ShoppingMenu.png" />
-    <img src="images/towerdefenseImages/Level24ArrowsActionShot.png" />
-    <img src="images/towerdefenseImages/Level24FireballsActionShot.png" />
-    <p class="slideshowLabels">
-      <span class="selected">O</span>
-      <span>O</span>
-      <span>O</span>
-      <span>O</span>
-    </p>
+<div class="projectPopover" id="towerdefenseInfo">
+  <div id="projectLinks">
+    <div class="popoverHeader"><h2>Tower<span>Defense</span></h2></div>
+    <div class="row">
+    <div class="col-xs-6 projectLinkTile">
+      <div data-class-in="" data-class-out="linkUpRight">
+      <a href="https://github.com/loganallen/TowerDefense.git" target="_blank" rel="tooltip" data-placement="right" title="View Source Code." onclick="hideProjectInfo()">
+      <img src="images/links/githubIconWhite.png" id="projectGithubIcon"></a>
+      </div>
+    </div>
+    <div class="col-xs-6 projectLinkTile">
+      <div data-class-in="" data-class-out="linkUpRight">
+      <a href="towerdefenseInfo.html" rel="tooltip" data-placement="left" title="See project.">
+      <img src="images/links/imagesIconWhite.png" id="projectImagesIcon"></a>
+      </div>
+    </div>
+    </div>
   </div>
 </div>
 
-<div id="processorInfo" class="projectContent">
-  <div class="slideshow">
-    <img class='opaque' src="images/processorImages/processorPart1.png" />
-    <img src="images/processorImages/processorPart2.png" />
-    <img src="images/processorImages/processorControl.png" />
-    <p class="slideshowLabels">
-      <span class="selected">O</span>
-      <span>O</span>
-      <span>O</span>
-    </p>
+<div class="projectPopover" id="processorInfo">
+  <div id="projectLinks">
+    <div class="popoverHeader"><h2>Micro<span>Processor</span></h2></div>
+    <div class="row">
+    <div class="col-xs-12 projectLinkTile">
+      <div data-class-in="" data-class-out="linkUpRight">
+      <a href="microprocessorInfo.html" rel="tooltip" data-placement="right" title="See project.">
+      <img src="images/links/imagesIconWhite.png" id="projectImagesIcon"></a>
+      </div>
+    </div>
+    </div>
   </div>
 </div>
 
-<div id="fade" class="black_overlay"><a href="javascript:void(0)" id="hideLink" cursor="default" onclick="hideProjectInfo()">hide</a></div>
-
+<div id="fade" class="black_overlay">
+  <a href="javascript:void(0)" id="hideLink" cursor="default" onclick="hideProjectInfo()">hide</a>
+</div>
 
 <!-- ABOUT SECTION 
     /////////////// -->
@@ -183,6 +191,7 @@
   <div class="col-xs-12 col-sm-6 col-md-6 blocks">
     <div data-class-in="" data-class-out="blockRight">
       <p> Apart from sophisticated computer science projects completed for class, Logan has created several iOS applications and locally-hosted games using graphics libraries in Java and Python. </p>
+      <br>
       <p> Logan really enjoys the simplicity of nature and strengthening social bonds with everyone in his life. He spends a significant amount of time playing volleyball, but smiles and laughs all the time. </p>
     </div>
   </div>
@@ -220,24 +229,11 @@
 
 </div>
 
-
-<!-- COLLAPSABLE RESUME
-    //////////////////// -->
-
-<!-- <div id="resumeSection" class="collapse container">
-	<object data="Allen_Logan_Resume.pdf" type="application/pdf" width="100%" height="500px" align="middle">
- 
-  <p>It appears you don't have a PDF plugin for this browser.
-  No biggie... click <a href="myfile.pdf">here</a> to view my resume in dropbox.</p>
-  
-	</object>
-</div>
- -->
 <!-- FOOTER
     //////// -->
 
 <footer class="container-fluid" id="myFooter">
-  <div data-class-in="" data-class-out="footerLeft">
+  <div>
   <p style="display: inline">© Copyright 2015 Logan Allen</p>
   </div>
 </footer>

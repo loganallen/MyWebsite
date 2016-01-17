@@ -3,6 +3,9 @@
 *{
   font-family: "Optima"; margin: 0; padding: 0;
 }
+body{
+  *zoom: 1;
+}
 
 /* //////////////////////////////////////////////////////
                     NAVIGATION BAR
@@ -57,17 +60,49 @@
   background-color: rgb(60,60,60) !important;
 }
 
+header {
+  overflow: hidden; padding-bottom: 65%;
+}
+@media (min-width: 400px) {
+  header { padding-bottom: 60%; }
+}
+@media (min-width: 600px) {
+  header { padding-bottom: 45%; }
+}
+@media (min-width: 700px) {
+  header { padding-bottom: 40%; }
+}
+@media (min-width: 800px) {
+  header { padding-bottom: 35%; }
+}
+header img {
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  vertical-align: middle;
+  max-width: 100%;
+  min-width: 1000px;
+  top: 0%;
+}
+main {
+  padding: 0;
+  position: relative;
+  background: #434A53;
+  color:#fff;
+  box-shadow: 0px -20px 60px rgba(0, 0, 0, 0.34);
+}
+
 /* //////////////////////////////////////////////////////
                     HOME SECTION
 ////////////////////////////////////////////////////// */
-
+/*
 #homeContainer{
   width: 100%;
   height: 460px;
   text-align: center;
   background-size: cover;
   background-image: url("images/cornellBackground.jpg");
-}
+}*/
 
 /* //////////////////////////////////////////////////////
                     PROJECTS SECTION
@@ -114,34 +149,9 @@
 .projectTileContainer{
     margin: 3% 0% 8% 0%; text-align: center;
 }
-.projectTileContainer div{
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  transition: opacity 1s;
-}
-.projectTileDisappear{
-  opacity: 0;
-}
 figure{
   width: 80%; margin: 0 auto;
 }
-
-/*.grid {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-left: 4%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-}*/
-/*figure {
-  float: left;
-  min-width: 360px;
-  width: 40%;
-  min-height: 270px;
-  height: 30vw;
-  margin: 4%;
-}*/
 
 /* //////////////////////////////////////////////////////
               POPOVER PROJECT TILE SECTION
@@ -173,20 +183,60 @@ figure{
   opacity: 0;
   overflow: hidden;
 }
-.projectContent {
+.projectPopover{
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 460px;
-  height: 400px;
-  margin-left: -230px;
-  margin-top: -200px;
+  margin-left: -125px;
+  margin-top: -55px;
+  background-color: rgba(0,0,0,0.6);
   border: 2px solid white;
-  background-color: rgba(255,255,255,0.5);
-  z-index: 1003;
   overflow: hidden;
+  z-index: 1003;
 }
+.projectLinks{
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+.projectLinkTile{
+  text-align: center;
+  opacity: 1;
+  padding: 20px 0;
+}
+.projectLinkTile a{
+  z-index: 1004;
+}
+.popoverHeader{
+  width: 250px;
+  color: #fff;
+  text-align: center;
+}
+.popoverHeader h2{
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: 250;
+}
+.popoverHeader h2 span{
+  font-weight: 600;
+}
+#projectGithubIcon{
+  width: 40px; height: 40px; content: url("images/links/githubIconWhite.png")
+}
+#projectGithubIcon:hover{
+  width: 40px; height: 40px; content: url("images/links/githubIconRed.png")
+}
+#projectImagesIcon{
+  width: 45px; height: 45px; content: url("images/links/imagesIconWhite.png")
+}
+#projectImagesIcon:hover{
+  width: 45px; height: 45px; content: url("images/links/imagesIconRed.png")
+}
+
+
+
+
 #minesweeperInfo .slideshow img{
   width: 50%; height: 100%; left: 25%;
 }
@@ -252,7 +302,7 @@ figure{
   padding: 3%;
   line-height: 1.7em;
   border-radius: 10px;
-  margin: 5% 15% 0% 15%;
+  margin: 15% 15% 0% 15%;
   -webkit-transition: -webkit-transform 1.2s, opacity 1.2s;
   -moz-transition: -moz-transform 1.2s, opacity 1.2s;
   transition: transform 1.2s, opacity 1.2s;
@@ -339,6 +389,7 @@ figure{
   width: 50px; height: 50px; content: url("images/links/resumeIconRed.png")
 }
 
+
 /* //////////////////////////////////////////////////////
                   FOOTER SECTION
 ////////////////////////////////////////////////////// */
@@ -346,19 +397,8 @@ figure{
 #myFooter{
   background-color: rgba(0,0,0,1);
   width: 100%;
-  padding: 20px;
+  padding: 1.5em 0;
   color: rgb(230,230,230);
   font-size: 13px;
   text-align: center;
-}
-#myFooter div{
-  -webkit-transition: -webkit-transform 1.5s, opacity 1.5s;
-  -moz-transition: -moz-transform 1.5s, opacity 1.5s;
-  transition: transform 1.5s, opacity 1.5s;
-}
-.footerLeft{
-  opacity: 0;
-  -webkit-transform: translateX(-100px);
-  -moz-transform: translateX(-100px);
-  transform: translateX(-100px);
 }

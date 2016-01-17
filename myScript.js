@@ -3,6 +3,17 @@ $(document).ready(function(){
     $('[rel="tooltip"]').tooltip(); 
 });
 
+// Parallax scrolling with blur
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  $(".parallax-zoom-blur img").css({
+    width: (100 + scroll/10)  + "%",
+    top: -(scroll/10)  + "%",
+    "-webkit-filter": "blur(" + (scroll/150) + "px)",
+    filter: "blur(" + (scroll/150) + "px)"
+  });
+});
+
 /* Hide Header on on scroll down */
 var didScroll;
 var lastScrollTop = 0;
@@ -113,10 +124,9 @@ $(function() {
 });
 
 $(function(){
-    // $('.projectTileContainer div').inview({'viewFactor': 0.4});
     $('.sectionHeader div').inview({'viewFactor': 0.8});
     $('.blocks div').inview({'viewFactor': 0.6});
     $('#links').inview({'viewFactor': 0.5});
     $('.linkTile div').inview({'viewFactor': 1});
-    // $('#myFooter div').inview({'viewFactor': 0.1});
 });
+

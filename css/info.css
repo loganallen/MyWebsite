@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Optima";
+}
+
+
+body {
+  width: 100%;
+ *zoom: 1;
+}
+
+header {
+  overflow: hidden;
+  padding-bottom: 80%;
+}
+@media (min-width: 400px) {
+  header { padding-bottom: 80%; }
+}
+@media (min-width: 450px) {
+  header { padding-bottom: 75%; }
+}
+@media (min-width: 500px) {
+  header { padding-bottom: 65%; }
+}
+@media (min-width: 600px) {
+  header { padding-bottom: 55%; }
+}
+@media (min-width: 700px) {
+  header { padding-bottom: 47%; }
+}
+
+#parallax {
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  top: 0%;
+  background-color: #222;
+}
+#projectHeader{
+  margin: 0;
+  padding: 3vmax 0;
+  color: #fff;
+  text-align: center;
+}
+#projectHeader h1{
+  font-size: 5.5vmax;
+}
+#projectHeader h1 span{
+  font-weight: 700;
+}
+.projectImage{
+  margin: 0 auto 10vmax 0;
+  text-align: center;
+}
+.projectImage img{
+  width: 26vmax;
+  border-radius: 2.5vmax;
+  text-align: center;
+  margin: 0 auto 50vmax auto;
+}
+
+main {
+  position: relative;
+  background: #434A53;
+  color:#fff;
+  box-shadow: 0px -20px 60px rgba(0, 0, 0, 0.6);
+}
+.linkCaption{
+  width: 90%;
+  margin: 3vmax auto 2vmax;
+  text-align: right;
+  -webkit-transition: -webkit-transform 0.8s, opacity 1s;
+  -moz-transition: -moz-transform 0.8s, opacity 1s;
+  transition: transform 0.8s, opacity 1s;
+}
+.linkSlide{
+  opacity: 0;
+  -webkit-transform: translateX(3vmax);
+  -moz-transform: translateX(3vmax);
+  transform: translateX(3vmax);
+}
+.linkCaption a img{
+  margin: 0 2vmax;
+}
+#githubIcon{
+  width: 5vmax; height: 5vmax; content: url("../images/links/githubIconWhite.png")
+}
+#githubIcon:hover{
+  width: 5vmax; height: 5vmax; content: url("../images/links/githubIconRed.png")
+}
+#homeIcon{
+  width: 5vmax; height: 5vmax; content: url("../images/links/homeIconWhite.png")
+}
+#homeIcon:hover{
+  width: 5vmax; height: 5vmax; content: url("../images/links/homeIconRed.png")
+}
+
+.projectCaption{
+  background-color: #fff;
+  opacity: 0.9;
+  width: 90%;
+  margin: 2vmax auto 6vmax;
+  padding: 2em;
+  color: rgb(117,6,0);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 1.5vmax;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.projectCaptionAnimation{
+  opacity: 0;
+}
+#myFooter{
+  background-color: #000;
+  padding: 1.5em 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(230,230,230);
+}
