@@ -6,7 +6,6 @@
   font-family: "Optima";
 }
 
-
 body {
   width: 100%;
  *zoom: 1;
@@ -89,7 +88,11 @@ main {
   width: 5vmax; height: 5vmax; content: url("../images/links/githubIconWhite.png")
 }
 #githubIcon:hover{
-  width: 5vmax; height: 5vmax; content: url("../images/links/githubIconRed.png")
+  width: 5vmax; height: 5vmax; content: url("../images/links/githubIconRed.png");
+  -webkit-transition: content 0.5s;
+  -moz-transition: content 0.5s;
+  -o-transition: content 0.5s;
+  transition: content 0.5s;
 }
 #homeIcon{
   width: 5vmax; height: 5vmax; content: url("../images/links/homeIconWhite.png")

@@ -8,7 +8,7 @@ $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   $(".parallax-zoom-blur img").css({
     width: (100 + scroll/10)  + "%",
-    top: -(scroll/10)  + "%",
+    top: -(scroll/20)  + "%",
     "-webkit-filter": "blur(" + (scroll/150) + "px)",
     filter: "blur(" + (scroll/150) + "px)"
   });
@@ -100,19 +100,6 @@ function hideProjectInfo(){
   document.getElementById('fade').style.display = 'none';
 };
 
-$(function() {
-  $(".slideshowLabels").on('click', 'span', function() {
-    $("#"+currentProject+" .slideshow img").removeClass("opaque");
-
-    var newImage = $(this).index();
-
-    $("#"+currentProject+" .slideshow img").eq(newImage).addClass("opaque");
-
-    $(".slideshowLabels span").removeClass("selected");
-    $(this).addClass("selected");
-  });
-});
-
 // Caption Hover for project images
 $(function() {
   $('.projectTile').captionHover({
@@ -130,3 +117,8 @@ $(function(){
     $('.linkTile div').inview({'viewFactor': 1});
 });
 
+$(function(){
+  $('.projectTileContainer').css('visibility', 'visible')
+  $('.projectTileContainer').css('display','none')
+  $('.projectTileContainer').fadeIn(2500)
+});

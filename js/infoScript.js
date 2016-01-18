@@ -17,4 +17,11 @@ $(window).scroll(function() {
 $(function(){
   $('.projectCaption').inview({'viewFactor': 0.7});
   $('.linkCaption').inview({'viewFactor': 0.8});
+  $('.nav > button').inview({'viewFactor': 0.6});
+});
+
+$(function(){
+  $('.projectImage').css('visibility', 'visible')
+  $('.projectImage').css('display','none')
+  $('.projectImage').fadeIn(4000)
 });
