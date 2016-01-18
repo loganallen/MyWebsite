@@ -1,5 +1,5 @@
 $(function() {
-  var showcase = $("#showcase")
+  var showcase = $(".showcase")
 
   showcase.Cloud9Carousel( {
     yPos: 42,
