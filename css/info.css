@@ -69,7 +69,7 @@ main {
 }
 .linkCaption{
   width: 90%;
-  margin: 3vmax auto 2vmax;
+  margin: 2vmax auto;
   text-align: right;
   -webkit-transition: -webkit-transform 0.8s, opacity 1s;
   -moz-transition: -moz-transform 0.8s, opacity 1s;
@@ -85,20 +85,20 @@ main {
   margin: 0 2vmax;
 }
 #githubIcon{
-  width: 5vmax; height: 5vmax; content: url("../images/links/githubIconWhite.png")
+  width: 50px; height: 50px; content: url("../images/links/githubIconWhite.png")
 }
 #githubIcon:hover{
-  width: 5vmax; height: 5vmax; content: url("../images/links/githubIconRed.png");
+  width: 50px; height: 50px; content: url("../images/links/githubIconRed.png");
   -webkit-transition: content 0.5s;
   -moz-transition: content 0.5s;
   -o-transition: content 0.5s;
   transition: content 0.5s;
 }
 #homeIcon{
-  width: 5vmax; height: 5vmax; content: url("../images/links/homeIconWhite.png")
+  width: 50px; height: 50px; content: url("../images/links/homeIconWhite.png")
 }
 #homeIcon:hover{
-  width: 5vmax; height: 5vmax; content: url("../images/links/homeIconRed.png")
+  width: 50px; height: 50px; content: url("../images/links/homeIconRed.png")
 }
 
 .projectCaption{
