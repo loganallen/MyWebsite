@@ -8,9 +8,9 @@ $(window).scroll(function() {
   var scroll = $(window).scrollTop();
 	$("#parallax").css({
 		// width: (100 + scroll/10)  + "%",
-		top: -(scroll/25)  + "%",
-		"-webkit-filter": "blur(" + (scroll/130) + "px)",
-		filter: "blur(" + (scroll/130) + "px)"
+		top: -(scroll/50)  + "%",
+		"-webkit-filter": "blur(" + (scroll/150) + "px)",
+		filter: "blur(" + (scroll/150) + "px)"
 	});
 });
 
