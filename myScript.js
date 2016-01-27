@@ -7,8 +7,8 @@ $(document).ready(function(){
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   $(".parallax-zoom-blur img").css({
-    width: (100 + scroll/10)  + "%",
-    top: -(scroll/20)  + "%",
+    //width: (100 + scroll)  + "%",
+    // top: -(scroll/20)  + "%",
     "-webkit-filter": "blur(" + (scroll/150) + "px)",
     filter: "blur(" + (scroll/150) + "px)"
   });
