@@ -114,11 +114,5 @@ $(function(){
     $('.sectionHeader div').inview({'viewFactor': 0.8});
     // $('.blocks div').inview({'viewFactor': 0.6});
     // $('#links').inview({'viewFactor': 0.5});
-    // $('.linkTile div').inview({'viewFactor': 0.8});
-});
-
-$(function(){
-  $('.projectTileContainer').css('visibility', 'visible')
-  $('.projectTileContainer').css('display','none')
-  $('.projectTileContainer').fadeIn(2500)
+    $('.linkTile div').inview({'viewFactor': 0.8});
 });

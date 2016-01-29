@@ -294,19 +294,19 @@ figure{
   transition: transform 1.4s, opacity 1.4s;
 }
 .linkUp{
-  opacity: 0;
+  /*opacity: 0;*/
   -webkit-transform: translateY(5%);
   -moz-transform: translateY(5%);
   transform: translateY(5%);
 }
 .linkUpLeft{
-  opacity: 0;
+  /*opacity: 0;*/
   -webkit-transform: translate3d(-15px,5%,0);
   -moz-transform: translate3d(-15px,5%,0);
   transform: translate3d(-15px,5%,0);
 }
 .linkUpRight{
-  opacity: 0;
+  /*opacity: 0;*/
   -webkit-transform: translate3d(15px,5%,0);
   -moz-transform: translate3d(15px,5%,0);
   transform: translate3d(15px,5%,0);
