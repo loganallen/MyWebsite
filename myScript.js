@@ -113,8 +113,8 @@ $(function() {
 $(function(){
     $('.sectionHeader div').inview({'viewFactor': 0.8});
     // $('.blocks div').inview({'viewFactor': 0.6});
-    $('#links').inview({'viewFactor': 0.5});
-    $('.linkTile div').inview({'viewFactor': 1});
+    // $('#links').inview({'viewFactor': 0.5});
+    // $('.linkTile div').inview({'viewFactor': 0.8});
 });
 
 $(function(){
