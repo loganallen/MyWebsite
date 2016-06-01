@@ -27,8 +27,8 @@ body {
 }
 #back_button{
   position: absolute;
-  top: 40px;
-  left: 44px;
+  top: 20px;
+  left: 22px;
   width: 80px;
   height: 36px;
   background-color: rgba(255,255,255,0);
@@ -45,6 +45,10 @@ body {
   -ms-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
+@media (min-width: 768px){
+  #back_button{ top: 40px; left: 44px; }
+}
+
 #back_button:hover{
   opacity: 1;
   background-color: rgba(255,255,255,0.3);
