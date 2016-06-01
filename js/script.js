@@ -46,8 +46,8 @@ $(document).ready(function() {
     goToProjectPage(project_id);
   });
 
-  var bh = $('#education_wrapper').height();
-  $('.about_wrapper').css({'height':bh+'px'});
+  // var bh = $('#education_wrapper').height();
+  // $('.about_wrapper').css({'height':bh+'px'});
 
 });
 
