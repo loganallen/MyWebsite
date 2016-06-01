@@ -13,8 +13,8 @@ $(document).ready(function() {
   $('#project_intro').flowtype({
     minimum: 400,
     maximum: 1200,
-    minFont: 15,
-    maxFont: 30,
-    fontRatio: 20
+    minFont: 14,
+    maxFont: 28,
+    fontRatio: 24
   });
 });
