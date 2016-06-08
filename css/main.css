@@ -245,6 +245,32 @@ body{
 	font-weight: 500;
 }
 
+#message_me{
+	margin: auto;
+	margin-top: 20px;
+	width: 200px;
+	height: 44px;
+	text-align: center;
+	background-color: rgba(255,255,255,0);
+	border: 2px #FFF solid;
+	border-radius: 5px;
+	color: #FFF;
+	padding-top: 9px;
+	font-size: 1em;
+	opacity: 0.8;
+	z-index: 1000;
+	-webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+#message_me:hover{
+	opacity: 1;
+	background-color: rgba(255,255,255,0.3);
+	box-shadow: 1px 1px 5px rgba(42,56,73,0.3);
+}
+
 
 #footer{
 	background-color: #EEE;
