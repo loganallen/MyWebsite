@@ -8,6 +8,10 @@ body{
 	width: 100%;
 }
 
+a, a:hover {
+	text-decoration: none !important;
+}
+
 .intro_section{
 	background-image: url("../assets/mountain_lake_background.jpg");
 	background-size: cover;
@@ -16,7 +20,6 @@ body{
 	height: 100vh;
 }
 .intro_section a{
-	text-decoration: none;
 	text-align: center;
 }
 #resume_button{
@@ -259,6 +262,7 @@ body{
 	font-size: 1em;
 	opacity: 0.8;
 	z-index: 1000;
+	text-decoration: none;
 	-webkit-transition: all .6s ease-in-out;
   -moz-transition: all .6s ease-in-out;
   -o-transition: all .6s ease-in-out;
@@ -267,6 +271,7 @@ body{
 }
 #message_me:hover{
 	opacity: 1;
+	text-decoration: none;
 	background-color: rgba(255,255,255,0.3);
 	box-shadow: 1px 1px 5px rgba(42,56,73,0.3);
 }
