@@ -192,6 +192,11 @@ a, a:hover {
 	background-size: cover;
 	background-position: center;
 }
+#cornellmaps_tile{
+	background-image: url("../assets/project_icons/cornellmapsIcon.png");
+	background-size: cover;
+	background-position: center;
+}
 #towerdefense_tile{
 	background-image: url("../assets/project_icons/towerdefenseIcon.png");
 	background-size: cover;
