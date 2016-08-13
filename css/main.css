@@ -192,8 +192,8 @@ a, a:hover {
 	background-size: cover;
 	background-position: center;
 }
-#cornellmaps_tile{
-	background-image: url("../assets/project_icons/cornellmapsIcon.png");
+#bigredmaps_tile{
+	background-image: url("../assets/project_icons/bigredmapsIcon.png");
 	background-size: cover;
 	background-position: center;
 }
