@@ -234,7 +234,7 @@ a, a:hover {
 	display: block;
 	margin: auto;
 	margin-bottom: 5vh;
-	max-width: 140px; 
+	max-width: 140px;
 }
 #education_icon{
 	width: 30%;
@@ -264,7 +264,7 @@ a, a:hover {
 	border: 2px #FFF solid;
 	border-radius: 5px;
 	color: #FFF;
-	padding-top: 9px;
+	padding-top: 10px;
 	font-size: 1em;
 	opacity: 0.8;
 	z-index: 1000;
@@ -287,11 +287,11 @@ a, a:hover {
 	background-color: #EEE;
 	color: #2A3849;
 	width: 100%;
-	padding-top: 4vh;
+	padding: 3vh 0;
 }
 #footer p{
 	text-align: center;
-	padding: 20px 0px 20px 0px;
+	padding: 14px 0px 6px 0px;
 }
 #footer_icons{
 	max-width: 700px;
@@ -302,15 +302,15 @@ a, a:hover {
 .icon_wrapper {
   position: relative;
   width: 100px;
-  height: 80px;
+  height: 70px;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 10px;
   display: inline-block;
 }
 
 .icon_wrapper img {
   position: absolute;
-  left: 20px;
+  left: 25px;
   width: 50px;
   -webkit-transition: opacity .6s ease-in-out;
   -moz-transition: opacity .6s ease-in-out;
