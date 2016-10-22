@@ -230,6 +230,9 @@ a, a:hover {
 	max-width: 600px;
 	margin: 5vh auto;
 }
+.about_wrapper.h3{
+	font-size: 1.0em;
+}
 .about_icon{
 	display: block;
 	margin: auto;
