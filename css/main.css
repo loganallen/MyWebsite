@@ -29,26 +29,26 @@ a, a:hover {
 	width: 80px;
 	height: 36px;
 	background-color: rgba(255,255,255,0);
-	border: 2px #FFF solid;
+	border: 2px #EEE solid;
 	border-radius: 5px;
-	color: #FFF;
+	color: #EEE;
 	padding-top: 7px;
 	font-size: 1em;
 	opacity: 0.8;
 	z-index: 1000;
-	-webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
-  -ms-transition: all .6s ease-in-out;
-	transition: all .6s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 }
 @media (min-width: 768px){
   #resume_button{ top: 40px; right: 44px; }
 }
 #resume_button:hover{
 	opacity: 1;
-	background-color: rgba(255,255,255,0.3);
-	box-shadow: 1px 1px 5px rgba(42,56,73,0.3);
+	background-color: #EEE;
+	color: rgb(131,175,238);
 }
 #intro_caption{
 	position: absolute;
@@ -264,25 +264,25 @@ a, a:hover {
 	height: 44px;
 	text-align: center;
 	background-color: rgba(255,255,255,0);
-	border: 2px #FFF solid;
+	border: 2px #EEE solid;
 	border-radius: 5px;
-	color: #FFF;
+	color: #EEE;
 	padding-top: 10px;
 	font-size: 1em;
 	opacity: 0.8;
 	z-index: 1000;
 	text-decoration: none;
-	-webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
-  -ms-transition: all .6s ease-in-out;
-	transition: all .6s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 }
 #message_me:hover{
 	opacity: 1;
 	text-decoration: none;
-	background-color: rgba(255,255,255,0.3);
-	box-shadow: 1px 1px 5px rgba(42,56,73,0.3);
+	background-color: #EEE;
+	color: #2A3849;
 }
 
 
@@ -315,10 +315,10 @@ a, a:hover {
   position: absolute;
   left: 25px;
   width: 50px;
-  -webkit-transition: opacity .6s ease-in-out;
-  -moz-transition: opacity .6s ease-in-out;
-  -o-transition: opacity .6s ease-in-out;
-  transition: opacity .6s ease-in-out;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition: opacity .4s ease-in-out;
+  -o-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
 
 .icon_wrapper img.top:hover {
