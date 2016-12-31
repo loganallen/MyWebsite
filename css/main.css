@@ -99,6 +99,8 @@ a, a:hover {
 	min-height: 200px;
 	width: 90%;
 	margin: auto;
+	background-size: cover;
+	background-position: center;
 	box-shadow: 4px 4px 10px rgba(42,56,73,0.4);
 	-webkit-transition: box-shadow .5s ease-in-out;
   -moz-transition: box-shadow .5s ease-in-out;
@@ -112,7 +114,7 @@ a, a:hover {
 .project_tile .mask {
 	opacity: 0;
 	overflow: visible;
-	background-color: rgba(29,39,51,0.7);
+	background-color: rgba(30,30,30,0.6);
 	border-radius: 15px;
 	height: 100%;
 	padding: 0 10%;
@@ -187,25 +189,23 @@ a, a:hover {
   transform: translateY(-10px);
 }
 
+#cmlcontrol_tile{
+	background-image: url("../assets/project_icons/cmlcontrolIcon.png");
+}
+#tempo_tile{
+	background-image: url("../assets/project_icons/tempoIcon.png");
+}
 #minesweeper_tile{
 	background-image: url("../assets/project_icons/minesweeperIcon.jpg");
-	background-size: cover;
-	background-position: center;
 }
 #bigredmaps_tile{
 	background-image: url("../assets/project_icons/bigredmapsIcon.png");
-	background-size: cover;
-	background-position: center;
 }
 #towerdefense_tile{
 	background-image: url("../assets/project_icons/towerdefenseIcon.png");
-	background-size: cover;
-	background-position: center;
 }
 #microprocessor_tile{
 	background-image: url("../assets/project_icons/microprocessorIcon.png");
-	background-size: cover;
-	background-position: center;
 }
 
 
