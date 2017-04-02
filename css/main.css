@@ -209,7 +209,6 @@ a, a:hover {
 }
 
 
-
 #about_header{
 	text-align: center;
 	font-size: 2.6em;
@@ -224,7 +223,6 @@ a, a:hover {
 	min-width: 250px;
 	width: 30vw;
 	max-width: 360px;
-	border-radius: 10vw;
 }
 .about_wrapper{
 	max-width: 600px;
